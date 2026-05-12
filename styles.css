@@ -312,7 +312,7 @@
 
   .section-header {
     display: flex;
-    align-items: baseline;
+    align-items: center;
     gap: 1rem;
     margin-bottom: 3.5rem;
   }
