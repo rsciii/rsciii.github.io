@@ -64,6 +64,17 @@ document.addEventListener('DOMContentLoaded', () => {
     if (e.target === e.currentTarget) closeModal('fantasy-overlay');
   });
 
+  // Section collapse/expand
+  document.querySelectorAll('.section-header.collapsible').forEach(header => {
+    header.addEventListener('click', () => {
+      const body = document.getElementById(header.dataset.target);
+      const btn = header.querySelector('.section-toggle');
+      const isCollapsed = body.classList.toggle('collapsed');
+      header.classList.toggle('is-collapsed', isCollapsed);
+      btn.textContent = isCollapsed ? '+' : '−';
+    });
+  });
+
   // Blog: filter + pagination
   const POSTS_PER_PAGE = 3;
   let currentFilter = 'all';

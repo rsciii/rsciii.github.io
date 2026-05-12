@@ -81,11 +81,13 @@
 
 <!-- ABOUT -->
 <section id="about">
-  <div class="section-header">
+  <div class="section-header collapsible" data-target="body-about">
     <span class="section-num">01</span>
     <h2>About</h2>
     <div class="section-line"></div>
+    <button class="section-toggle" aria-label="Toggle section">−</button>
   </div>
+  <div class="section-body" id="body-about">
 
   <div class="about-grid">
     <div class="about-text">
@@ -127,16 +129,19 @@
       </div>
     </div>
   </div>
+  </div><!-- /section-body about -->
 </section>
 
 <!-- SKILLS -->
 <section id="skills" style="max-width:100%; background:var(--bg2); padding: 6rem 3rem;">
 <div style="max-width:1100px; margin:0 auto;">
-  <div class="section-header">
+  <div class="section-header collapsible" data-target="body-skills">
     <span class="section-num">02</span>
     <h2>Skills</h2>
     <div class="section-line"></div>
+    <button class="section-toggle" aria-label="Toggle section">−</button>
   </div>
+  <div class="section-body" id="body-skills">
   <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap:1rem;">
 
     <div style="background:var(--bg3); border:1px solid var(--border); padding:1.5rem;">
@@ -180,17 +185,20 @@
     </div>
 
   </div>
+  </div><!-- /section-body skills -->
 </div>
 </section>
 
 <!-- PROJECTS -->
 <section id="projects" style="max-width:100%; background:var(--bg); padding: 6rem 3rem;">
 <div style="max-width:1100px; margin:0 auto;">
-  <div class="section-header">
+  <div class="section-header collapsible" data-target="body-projects">
     <span class="section-num">03</span>
     <h2>Projects</h2>
     <div class="section-line"></div>
+    <button class="section-toggle" aria-label="Toggle section">−</button>
   </div>
+  <div class="section-body" id="body-projects">
 
   <div class="projects-grid">
 
@@ -329,17 +337,19 @@
     </div>
 
   </div>
+  </div><!-- /section-body projects -->
 </div>
 </section>
 
 <!-- EXPERIENCE -->
 <section id="experience">
-  <div class="section-header">
+  <div class="section-header collapsible" data-target="body-experience">
     <span class="section-num">04</span>
     <h2>Experience</h2>
     <div class="section-line"></div>
+    <button class="section-toggle" aria-label="Toggle section">−</button>
   </div>
-
+  <div class="section-body" id="body-experience">
   <div class="timeline">
 
     <div class="timeline-item">
@@ -492,16 +502,19 @@
     </div>
 
   </div>
+  </div><!-- /section-body experience -->
 </section>
 
 <!-- INTERESTS -->
 <section id="interests" style="max-width:100%; background:var(--bg2); padding: 6rem 3rem;">
 <div style="max-width:1100px; margin:0 auto;">
-  <div class="section-header">
+  <div class="section-header collapsible" data-target="body-interests">
     <span class="section-num">05</span>
     <h2>Interests</h2>
     <div class="section-line"></div>
+    <button class="section-toggle" aria-label="Toggle section">−</button>
   </div>
+  <div class="section-body" id="body-interests">
 
   <div class="interests-grid">
     <div class="interest-item" style="grid-column: 1 / -1; padding:1.5rem;">
@@ -589,16 +602,19 @@
       <p class="interest-desc"><a href="https://www.fpcobb.org/" target="_blank" style="color:var(--accent); text-decoration:none; border-bottom:1px solid rgba(99,220,180,0.3);">Family Promise</a> · <a href="https://www.possefoundation.org/" target="_blank" style="color:var(--accent); text-decoration:none; border-bottom:1px solid rgba(99,220,180,0.3);">Posse Foundation</a> · <a href="https://www.guidingeyes.org/" target="_blank" style="color:var(--accent); text-decoration:none; border-bottom:1px solid rgba(99,220,180,0.3);">Guiding Eyes for the Blind</a> · <a href="https://hunterdonoutreach.org/" target="_blank" style="color:var(--accent); text-decoration:none; border-bottom:1px solid rgba(99,220,180,0.3);">Hunterdon Outreach Program</a>.</p>
     </div>
   </div>
+  </div><!-- /section-body interests -->
 </div>
 </section>
 
 <!-- BLOG / WRITING -->
 <section id="blog">
-  <div class="section-header">
+  <div class="section-header collapsible" data-target="body-blog">
     <span class="section-num">06</span>
     <h2>Writing</h2>
     <div class="section-line"></div>
+    <button class="section-toggle" aria-label="Toggle section">−</button>
   </div>
+  <div class="section-body" id="body-blog">
 
   <div class="blog-controls">
     <div class="blog-filters">
@@ -659,15 +675,18 @@
     <span class="blog-page-indicator" id="blog-page-indicator">Page 1 of 2</span>
     <button class="blog-page-btn" id="blog-next">Next →</button>
   </div>
+  </div><!-- /section-body blog -->
 </section>
 
 <!-- MEDIA -->
 <section id="media">
-  <div class="section-header">
+  <div class="section-header collapsible" data-target="body-media">
     <span class="section-num">07</span>
     <h2>Media</h2>
     <div class="section-line"></div>
+    <button class="section-toggle" aria-label="Toggle section">−</button>
   </div>
+  <div class="section-body" id="body-media">
 
   <div class="media-grid">
 
@@ -713,6 +732,7 @@
     <!-- Add new media cards here -->
 
   </div>
+  </div><!-- /section-body media -->
 </section>
 
 <!-- FOOTER -->
