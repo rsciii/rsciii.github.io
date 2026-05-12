@@ -31,6 +31,20 @@ document.addEventListener('DOMContentLoaded', () => {
     openModal('fantasy-overlay');
   });
 
+  // Birthday modal: open
+  document.getElementById('birthday-open').addEventListener('click', (e) => {
+    e.preventDefault();
+    openModal('birthday-overlay');
+  });
+
+  // Birthday modal: close on overlay background click
+  document.getElementById('birthday-overlay').addEventListener('click', (e) => {
+    if (e.target === e.currentTarget) closeModal('birthday-overlay');
+  });
+
+  // Birthday modal: close button
+  document.querySelector('#birthday-overlay .close-btn').addEventListener('click', () => closeModal('birthday-overlay'));
+
   // 30 clients modal: open
   document.getElementById('thirtyclients-open').addEventListener('click', (e) => {
     e.preventDefault();
