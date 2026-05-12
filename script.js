@@ -195,6 +195,38 @@ document.addEventListener('DOMContentLoaded', () => {
     },
   });
 
+  // US states map
+  new jsVectorMap({
+    selector: '#us-map',
+    map: 'us_aea',
+    backgroundColor: '#18181f',
+    zoomOnScroll: false,
+    zoomButtons: false,
+    regionStyle: {
+      initial: {
+        fill: '#2a2a35',
+        stroke: 'rgba(255,255,255,0.06)',
+        strokeWidth: 0.5,
+      },
+      hover: {
+        fill: '#63dcb4',
+        fillOpacity: 0.5,
+        cursor: 'default',
+      },
+    },
+    selectedRegionStyle: {
+      fill: '#63dcb4',
+      stroke: 'rgba(99,220,180,0.4)',
+      strokeWidth: 1,
+    },
+    selectedRegions: [
+      'US-AK','US-AZ','US-CA','US-CT','US-DE','US-FL','US-GA',
+      'US-HI','US-IL','US-KY','US-LA','US-MD','US-MA','US-NE',
+      'US-NV','US-NH','US-NJ','US-NY','US-NC','US-OR','US-PA',
+      'US-RI','US-SC','US-TN','US-UT','US-VT','US-VA','US-WA',
+    ],
+  });
+
   // Gallery: thumbnail click swaps main image and updates active opacity
   document.querySelectorAll('.gallery-thumb').forEach(thumb => {
     thumb.addEventListener('click', () => {
