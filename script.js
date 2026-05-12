@@ -10,6 +10,23 @@ function closeModal(id) {
 
 document.addEventListener('DOMContentLoaded', () => {
 
+  // Mobile nav hamburger
+  const overlay = document.getElementById('mobile-nav-overlay');
+  document.querySelector('.nav-hamburger').addEventListener('click', () => {
+    overlay.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  });
+  document.querySelector('.mobile-nav-close').addEventListener('click', () => {
+    overlay.classList.remove('open');
+    document.body.style.overflow = '';
+  });
+  document.querySelectorAll('.mobile-nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+      overlay.classList.remove('open');
+      document.body.style.overflow = '';
+    });
+  });
+
   // Modal: open
   document.getElementById('acronyms-open').addEventListener('click', (e) => {
     e.preventDefault();
