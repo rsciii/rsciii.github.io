@@ -605,6 +605,9 @@
 
   .blog-item:last-child { border-bottom: none; }
   .blog-item:hover { background: var(--bg3); }
+  .blog-item--disabled { cursor: default; opacity: 0.45; }
+  .blog-item--disabled:hover { background: transparent; }
+  .blog-item--disabled:hover .blog-item-title { color: var(--text); }
 
   .blog-item-left { flex: 1; }
 
