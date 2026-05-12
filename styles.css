@@ -876,6 +876,14 @@
     text-align: center;
   }
 
+  .trip-card-desc {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.52rem;
+    color: rgba(255,255,255,0.3);
+    letter-spacing: 0.04em;
+    text-align: center;
+  }
+
   .trip-photo-slot {
     aspect-ratio: 4/3;
     background: var(--bg3);
