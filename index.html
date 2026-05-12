@@ -1,0 +1,1094 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bobby Cole</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jsvectormap@1.5.3/dist/css/jsvectormap.min.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">RC.cx</div>
+  <ul class="nav-links">
+    <li><a href="#about">about</a></li>
+    <li><a href="#skills">skills</a></li>
+    <li><a href="#projects">projects</a></li>
+    <li><a href="#experience">experience</a></li>
+    <li><a href="#interests">interests</a></li>
+    <li><a href="#blog">writing</a></li>
+    <li><a href="#media">media</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero" style="max-width:100%; padding-top:8rem;">
+  <div class="hero-grid"></div>
+  <div class="hero-glow"></div>
+
+  <div style="display:grid; grid-template-columns:1fr 1fr; gap:4rem; align-items:center; position:relative;">
+    <div>
+      <div class="hero-eyebrow" style="font-family:'Syne',sans-serif; font-size:1rem; letter-spacing:0.01em; text-transform:none; color:var(--muted);">
+        Hi there, thanks for stopping by. I'm <strong style="color:var(--text); font-size:1.15rem;">Robert Stockton Cole III</strong> but you can call me —
+      </div>
+
+      <h1>
+        <span class="line2">Bobby.</span>
+      </h1>
+
+      <p class="hero-sub">
+        Come see what I've been up to lately.
+      </p>
+
+      <div class="hero-ctas">
+        <a href="#experience" class="btn-primary">View Experience</a>
+        <a href="#skills" class="btn-outline">See Skills</a>
+      </div>
+    </div>
+
+    <!-- Team photo with highlight -->
+    <div style="position:relative; border:1px solid var(--border);">
+      <img src="images/team-photo.gif" alt="Standard Metrics team photo" style="width:100%; display:block;" />
+      <!-- Highlight circle over Bobby: front row, right side ~80% from left, ~78% from top -->
+      <div style="position:absolute; left:58%; top:62%; transform:translate(-50%,-50%); width:52px; height:52px; border-radius:50%; border:2.5px solid var(--accent); box-shadow:0 0 0 3px rgba(99,220,180,0.15), 0 0 16px rgba(99,220,180,0.4); pointer-events:none;"></div>
+      <!-- Label -->
+      <div style="position:absolute; left:58%; top:calc(62% + 34px); transform:translateX(-50%); font-family:'Space Mono',monospace; font-size:0.6rem; color:var(--accent); letter-spacing:0.1em; white-space:nowrap; background:rgba(10,10,15,0.85); padding:0.15rem 0.4rem;">me</div>
+    </div>
+  </div>
+
+  <div class="hero-stats">
+    <div class="hero-stat-item">
+      <img src="images/fiance.jpg" alt="Fiancée" class="hero-stat-photo" />
+      <span class="hero-stat-num">Fiancé</span>
+      <span class="hero-stat-label">SOON TO BE HUSBAND</span>
+    </div>
+    <div class="hero-stat-item">
+      <img src="images/dogdad.jpg" alt="Dog Dad" class="hero-stat-photo" style="object-position: top;" />
+      <span class="hero-stat-num" style="white-space:nowrap;">Dog Dad</span>
+      <span class="hero-stat-label">2ND FAVORITE HUMAN</span>
+    </div>
+    <div class="hero-stat-item">
+      <img src="images/builder 2.jpg" alt="Builder" class="hero-stat-photo" />
+      <span class="hero-stat-num">Builder</span>
+      <span class="hero-stat-label">OF THINGS THAT MAY OR MAY NOT WORK</span>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-header">
+    <span class="section-num">01</span>
+    <h2>About</h2>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="about-grid">
+    <div class="about-text">
+      <p>I'm Bobby Cole — based in <strong>New Jersey</strong>, currently managing 30+ enterprise clients at Standard Metrics, working with the world's premier VC, PE, and CVC firms.</p>
+      <p>When I say I'm from New Jersey, I mean it literally. I'm a 9th-generation steward of a <a href="https://www.nj.com/hunterdon/2017/03/1700s_nj_farm_started_by_indentured_servant_is_pre.html" target="_blank" style="color:var(--accent); text-decoration:none; border-bottom:1px solid rgba(99,220,180,0.3);">family farm in Hunterdon County</a> that dates to the 1700s. My middle name — Stockton — comes from Richard Stockton, a signer of the Declaration of Independence.</p>
+      <p>My background spans <strong>finance, marketing, and engineering</strong> — a combination that lets me speak fluently with CFOs, engineers, and founders in the same week. I hold a Master of Engineering in Technical Entrepreneurship and a BS in Finance &amp; Marketing, both from Lehigh University.</p>
+      <p>Professionally, I am a resourceful post-sales strategist adept at cultivating relationships, streamlining technical solutions, and transforming complex data into strategic insights. I thrive in environments where the answers aren't obvious yet. Whether that means building bespoke reporting solutions, training LLMs for client-facing tooling, or designing health frameworks that surface risk before it becomes churn — I like turning complexity into clarity.</p>
+      <p>Outside of work: if it has a motor, I'm interested. Philadelphia sports are non-negotiable. And music is always on — whether I'm writing it or just listening.</p>
+    </div>
+
+    <div class="about-sidebar">
+      <div class="about-card">
+        <div class="about-card-icon">📍</div>
+        <div>
+          <span class="about-card-label">LOCATION</span>
+          <span class="about-card-val">New Jersey (Remote)</span>
+        </div>
+      </div>
+      <div class="about-card">
+        <div class="about-card-icon">🎓</div>
+        <div>
+          <span class="about-card-label">EDUCATION</span>
+          <span class="about-card-val">M.Eng + BS, Lehigh University</span>
+        </div>
+      </div>
+      <div class="about-card">
+        <div class="about-card-icon">🏆</div>
+        <div>
+          <span class="about-card-label">RECOGNITION</span>
+          <span class="about-card-val">2024 "Impact" Award — Standard Metrics</span>
+        </div>
+      </div>
+      <div class="about-card">
+        <div class="about-card-icon">💬</div>
+        <div>
+          <span class="about-card-label">STATUS</span>
+          <span class="about-card-val">CXM III · Open to connect</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" style="max-width:100%; background:var(--bg2); padding: 6rem 3rem;">
+<div style="max-width:1100px; margin:0 auto;">
+  <div class="section-header">
+    <span class="section-num">02</span>
+    <h2>Skills</h2>
+    <div class="section-line"></div>
+  </div>
+  <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap:1rem;">
+
+    <div style="background:var(--bg3); border:1px solid var(--border); padding:1.5rem;">
+      <div style="font-family:'Space Mono',monospace; font-size:0.65rem; color:var(--accent); letter-spacing:0.12em; margin-bottom:1rem;">AI &amp; DATA</div>
+      <ul style="list-style:none; display:flex; flex-direction:column; gap:0.5rem;">
+        <li style="font-size:0.88rem; color:var(--muted);">Integrations via APIs, MCPs</li>
+        <li style="font-size:0.88rem; color:var(--muted);">Training &amp; implementing LLMs</li>
+        <li style="font-size:0.88rem; color:var(--muted);">Data analysis (SQL, Tableau)</li>
+        <li style="font-size:0.88rem; color:var(--muted);">Data visualization (Power BI)</li>
+      </ul>
+    </div>
+
+    <div style="background:var(--bg3); border:1px solid var(--border); padding:1.5rem;">
+      <div style="font-family:'Space Mono',monospace; font-size:0.65rem; color:var(--accent); letter-spacing:0.12em; margin-bottom:1rem;">FINANCE &amp; STRATEGY</div>
+      <ul style="list-style:none; display:flex; flex-direction:column; gap:0.5rem;">
+        <li style="font-size:0.88rem; color:var(--muted);">FP&amp;A &amp; alternatives modeling</li>
+        <li style="font-size:0.88rem; color:var(--muted);">Startup &amp; business development</li>
+        <li style="font-size:0.88rem; color:var(--muted);">Leadership &amp; public speaking</li>
+        <li style="font-size:0.88rem; color:var(--muted);">Microsoft, Google, Adobe Suites</li>
+      </ul>
+    </div>
+
+    <div style="background:var(--bg3); border:1px solid var(--border); padding:1.5rem;">
+      <div style="font-family:'Space Mono',monospace; font-size:0.65rem; color:var(--accent); letter-spacing:0.12em; margin-bottom:1rem;">PRODUCT &amp; DESIGN</div>
+      <ul style="list-style:none; display:flex; flex-direction:column; gap:0.5rem;">
+        <li style="font-size:0.88rem; color:var(--muted);">Product development (Figma)</li>
+        <li style="font-size:0.88rem; color:var(--muted);">Front end (CSS, HTML)</li>
+        <li style="font-size:0.88rem; color:var(--muted);">CAD (SolidWorks, Fusion 360)</li>
+        <li style="font-size:0.88rem; color:var(--muted);">Additive manufacturing</li>
+      </ul>
+    </div>
+
+    <div style="background:var(--bg3); border:1px solid var(--border); padding:1.5rem; border-color:var(--border-accent);">
+      <div style="font-family:'Space Mono',monospace; font-size:0.65rem; color:var(--accent); letter-spacing:0.12em; margin-bottom:1rem;">+ OTHER</div>
+      <ul style="list-style:none; display:flex; flex-direction:column; gap:0.5rem;">
+        <li style="font-size:0.88rem; color:var(--muted);">Songwriter — piano &amp; trombone</li>
+        <li style="font-size:0.88rem; color:var(--muted);">TESOL (taught English abroad)</li>
+        <li style="font-size:0.88rem; color:var(--muted);">Community building &amp; user enablement</li>
+        <li style="font-size:0.88rem; color:var(--muted);">Executive storytelling &amp; narrative design</li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" style="max-width:100%; background:var(--bg); padding: 6rem 3rem;">
+<div style="max-width:1100px; margin:0 auto;">
+  <div class="section-header">
+    <span class="section-num">03</span>
+    <h2>Projects</h2>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="projects-grid">
+
+    <!-- FEATURED PROJECT -->
+    <div class="project-card project-featured" style="display:block; padding:0;">
+      <div style="padding:2.5rem 2.5rem 2rem;">
+        <span class="project-tag">FEATURED · PERSONAL BUILD</span>
+        <h3 style="font-size:1.6rem; margin-bottom:0.75rem;">I Built a 3D Printer. It Humbled Me.</h3>
+        <p style="font-size:0.95rem; color:var(--muted); line-height:1.75; margin-bottom:1.5rem;">During my Master's in Technical Entrepreneurship I decided the fastest way to understand additive manufacturing was to build the machine itself. The Troxy X1 is an entry-level kit I assembled, wired, and calibrated end-to-end — with one catch: <strong style="color:var(--text);">every instruction in the manual was written in Mandarin.</strong> No English translation included. Getting it running meant leaning on translator apps, digging through YouTube tutorials, and tapping anyone in my network who could help decode a wiring diagram. Honestly, one of the better problem-solving exercises I've had. CAD journey evolved alongside it: Fusion 360 → SolidWorks → AI-assisted generative design. The prints that followed ranged from a Batman logo (Dark Knight top 3, no debate) to microfluidic components for blood sample testing, to a custom bottle opener for a friend's nonprofit — <a href="https://makeachange.world/" target="_blank" style="color:var(--accent); text-decoration:none;">Make a Change World</a>, now part of <a href="https://sungai.watch/" target="_blank" style="color:var(--accent); text-decoration:none;">Sungai Watch</a>. The self-portrait iteration series tells the rest: wrong scale, failed supports, alignment drift, and eventually — a clean orange figure that actually looks like a person. The Troxy X1 is still running today, mostly small prints for friends. The next step is something like an Ultimaker — but that requires more research. And more money.</p>
+        <div style="display:flex; gap:2.5rem; flex-wrap:wrap; padding-top:1rem; border-top:1px solid var(--border);">
+          <div>
+            <span style="font-family:'Space Mono',monospace; font-size:0.62rem; color:var(--muted); display:block; margin-bottom:0.25rem; letter-spacing:0.1em;">SOFTWARE</span>
+            <span style="font-size:0.95rem; font-weight:700; color:var(--text);">Fusion 360 · SolidWorks · AI</span>
+          </div>
+          <div>
+            <span style="font-family:'Space Mono',monospace; font-size:0.62rem; color:var(--muted); display:block; margin-bottom:0.25rem; letter-spacing:0.1em;">HARDWARE</span>
+            <span style="font-size:0.95rem; font-weight:700; color:var(--text);">Troxy X1 · Custom Build</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Photo gallery -->
+      <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:2px; background:var(--border);">
+
+        <div style="position:relative; overflow:hidden; aspect-ratio:4/3; background:var(--bg3);">
+          <img src="images/3d-printer.jpg" alt="The Troxy X1 printer on a desk alongside a lineup of 3D-printed self-portrait figurines in black, blue, and orange" style="width:100%; height:100%; object-fit:cover; display:block;" />
+          <div style="position:absolute; bottom:0; left:0; right:0; padding:0.5rem 0.75rem; background:linear-gradient(transparent, rgba(0,0,0,0.75)); font-family:'Space Mono',monospace; font-size:0.6rem; color:rgba(255,255,255,0.8); letter-spacing:0.08em;">THE SETUP</div>
+        </div>
+
+        <div style="position:relative; overflow:hidden; aspect-ratio:4/3; background:var(--bg3);">
+          <img src="images/3d-figurines-lineup.jpg" alt="A lineup of 3D-printed self-portrait figurines showing iteration from early failed prints to a clean final orange figure" style="width:100%; height:100%; object-fit:cover; display:block;" />
+          <div style="position:absolute; bottom:0; left:0; right:0; padding:0.5rem 0.75rem; background:linear-gradient(transparent, rgba(0,0,0,0.75)); font-family:'Space Mono',monospace; font-size:0.6rem; color:rgba(255,255,255,0.8); letter-spacing:0.08em;">ITERATION → RESULT</div>
+        </div>
+
+        <div style="position:relative; overflow:hidden; aspect-ratio:4/3; background:var(--bg3);">
+          <img src="images/3d-early-prints.jpg" alt="Early prints including a Batman logo, a Make a Change World bottle opener, and a microfluidic tile for blood sample testing" style="width:100%; height:100%; object-fit:cover; object-position:center; display:block;" />
+          <div style="position:absolute; bottom:0; left:0; right:0; padding:0.5rem 0.75rem; background:linear-gradient(transparent, rgba(0,0,0,0.75)); font-family:'Space Mono',monospace; font-size:0.6rem; color:rgba(255,255,255,0.8); letter-spacing:0.08em;">EARLY PRINTS</div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- STOCK TICKER FEATURED CARD -->
+    <div class="project-card" style="grid-column: 1 / -1; background:var(--bg2); border:1px solid var(--border-accent); display:grid; grid-template-columns:1fr 1fr; gap:0; padding:0;">
+      <div style="padding:2.5rem;">
+        <span class="project-tag">PERSONAL BUILD</span>
+        <h3 style="font-size:1.4rem; margin-bottom:0.75rem;">Wall St. Came to My Home Office</h3>
+        <p style="font-size:0.9rem; color:var(--muted); line-height:1.75; margin-bottom:1.5rem;">Growing up constantly in and around NYC, stock tickers are just part of the visual landscape — scrolling across buildings, lobbies, TV chyrons. When I went fully remote I wanted one behind me, but couldn't find anything reasonably priced with decent reviews. So I built it myself, inspired by <a href="https://blog.adafruit.com/2021/02/10/easily-make-a-stock-ticker-with-adafruit-matrix-portal-and-circuitpython-matrixportal-circuitpython/" target="_blank" style="color:var(--accent); text-decoration:none;">this Adafruit project</a>. Two LED matrix boards joined with custom 3D-printed hardware and driven by an <a href="https://www.adafruit.com/product/4745" target="_blank" style="color:var(--accent); text-decoration:none;">Adafruit S3 Matrix Portal</a>. Pulls real-time quotes for stocks and crypto via the <a href="https://finnhub.io/docs/api" target="_blank" style="color:var(--accent); text-decoration:none;">Finnhub API</a>, refreshing on a live loop throughout the day. The build involved a lot of fine-tuning: text formatting, symbol sizing, scroll speed and timing, color coding for gains vs. losses, and blending the seam between the two boards so the display reads as one seamless panel. If only this ticker had always helped me pick the correct stocks to invest in <em>(potential enhancement?)</em>.</p>
+        <div style="display:flex; gap:2.5rem; flex-wrap:wrap; padding-top:1rem; border-top:1px solid var(--border);">
+          <div>
+            <span style="font-family:'Space Mono',monospace; font-size:0.62rem; color:var(--muted); display:block; margin-bottom:0.25rem; letter-spacing:0.1em;">HARDWARE</span>
+            <span style="font-size:0.9rem; font-weight:700; color:var(--text);">S3 Matrix Portal · Dual LED Matrix</span>
+          </div>
+          <div>
+            <span style="font-family:'Space Mono',monospace; font-size:0.62rem; color:var(--muted); display:block; margin-bottom:0.25rem; letter-spacing:0.1em;">DATA</span>
+            <span style="font-size:0.9rem; font-weight:700; color:var(--text);">Finnhub API · Stocks + Crypto</span>
+          </div>
+        </div>
+      </div>
+      <div style="background:var(--bg3); border-left:1px solid var(--border); display:flex; flex-direction:column; align-items:center; justify-content:center; padding:1.5rem; gap:0.75rem;">
+        <img src="images/stock-ticker.gif" alt="Live stock ticker scrolling across two joined LED matrix boards mounted on a wall" style="width:100%; border:1px solid var(--border); display:block;" />
+        <span style="font-family:'Space Mono',monospace; font-size:0.62rem; color:var(--muted); letter-spacing:0.08em; text-align:center;">* sped up in gif conversion — real scroll is smooth</span>
+      </div>
+    </div>
+
+    <a class="project-card" href="https://standardmetrics.io/standard-metrics-launches-ai-analyst/" target="_blank" style="text-decoration:none; color:inherit; display:block;">
+      <span class="project-tag">AI ANALYST</span>
+      <h3>AI Tooling for Reporting</h3>
+      <p>Implemented AI and BI tooling at Standard Metrics — ranging from document parsing functions to analytical agents — used by enterprise clients to bolster their reporting workflows.</p>
+      <div class="project-meta">
+        <span class="project-outcome">Deployed at 100+ firms</span>
+        <span class="project-arrow">↗</span>
+      </div>
+    </a>
+
+    <a class="project-card" href="https://standardmetrics.io/introducing-global-benchmarking/" target="_blank" style="text-decoration:none; color:inherit; display:block;">
+      <span class="project-tag">PRODUCT</span>
+      <h3>Global Benchmarking Feature</h3>
+      <p>Partnered with product &amp; engineering on development and rollout of a proprietary 'global benchmarking' offering — contributing as an active internal voice for client needs throughout the build.</p>
+      <div class="project-meta">
+        <span class="project-outcome">New product line shipped</span>
+        <span class="project-arrow">↗</span>
+      </div>
+    </a>
+
+    <a class="project-card" href="https://standardmetrics.io/standard-metrics-partners-with-omni-to-enable-ai-powered-portfolio-intelligence-for-vcs/" target="_blank" style="text-decoration:none; color:inherit; display:block;">
+      <span class="project-tag">BI TOOLING</span>
+      <h3>AI-Powered Portfolio Intelligence</h3>
+      <p>Partnership with Omni to enable AI-powered portfolio intelligence for VCs — bringing embedded analytics and natural language querying directly into the Standard Metrics platform.</p>
+      <div class="project-meta">
+        <span class="project-outcome">Platform-level integration</span>
+        <span class="project-arrow">↗</span>
+      </div>
+    </a>
+
+    <a class="project-card" href="https://standardmetrics.io/improving-llms-in-context-learning-at-standard-metrics/" target="_blank" style="text-decoration:none; color:inherit; display:block;">
+      <span class="project-tag">AI · LLM</span>
+      <h3>Improving LLMs' In-Context Learning</h3>
+      <p>Contributed to research and implementation work on improving in-context learning for LLMs at Standard Metrics — enhancing how models leverage platform data to generate more accurate, context-aware outputs for clients.</p>
+      <div class="project-meta">
+        <span class="project-outcome">Internal AI research</span>
+        <span class="project-arrow">↗</span>
+      </div>
+    </a>
+
+    <div class="project-card" style="display:block;">
+      <span class="project-tag">PERSONAL BUILD · WEB</span>
+      <h3>Website Builds</h3>
+      <p>Built and maintain multiple websites from scratch — including this portfolio and a wedding website. This site started as a single 30MB monolithic HTML file with embedded base64 images and was restructured into a clean three-file architecture (HTML / CSS / JS) with a proper image pipeline. Built with AI-assisted development using Claude Code, iterating fast without sacrificing structure.</p>
+      <div style="display:flex; gap:2rem; flex-wrap:wrap; padding-top:1rem; border-top:1px solid var(--border); margin-top:auto;">
+        <div>
+          <span style="font-family:'Space Mono',monospace; font-size:0.62rem; color:var(--muted); display:block; margin-bottom:0.25rem; letter-spacing:0.1em;">STACK</span>
+          <span style="font-size:0.9rem; font-weight:700; color:var(--text);">HTML · CSS · JS</span>
+        </div>
+        <div>
+          <span style="font-family:'Space Mono',monospace; font-size:0.62rem; color:var(--muted); display:block; margin-bottom:0.25rem; letter-spacing:0.1em;">TOOLING</span>
+          <span style="font-size:0.9rem; font-weight:700; color:var(--text);">Claude Code · AI-assisted</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card" style="display:block;">
+      <span class="project-tag">AI · AUTOMATION</span>
+      <h3>Dreaming of Agents</h3>
+      <p>Built a suite of overnight agentic workflows using Claude for Chrome and Claude's scheduled task capabilities to supercharge CSM productivity. While the team sleeps, agents run — scraping signals, summarizing account activity, flagging at-risk accounts, and drafting prep notes so CSMs hit the morning ready. An ongoing experiment in what post-sales looks like when your AI runs the night shift.</p>
+      <div style="display:flex; gap:2rem; flex-wrap:wrap; padding-top:1rem; border-top:1px solid var(--border); margin-top:auto;">
+        <div>
+          <span style="font-family:'Space Mono',monospace; font-size:0.62rem; color:var(--muted); display:block; margin-bottom:0.25rem; letter-spacing:0.1em;">TOOLING</span>
+          <span style="font-size:0.9rem; font-weight:700; color:var(--text);">Claude for Chrome · Scheduled Agents</span>
+        </div>
+        <div>
+          <span style="font-family:'Space Mono',monospace; font-size:0.62rem; color:var(--muted); display:block; margin-bottom:0.25rem; letter-spacing:0.1em;">STATUS</span>
+          <span style="font-size:0.9rem; font-weight:700; color:var(--text);">Running nightly</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="section-header">
+    <span class="section-num">04</span>
+    <h2>Experience</h2>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="timeline">
+
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-date">2023 — PRESENT</div>
+      <div class="timeline-role">Client Experience Manager I → II → III <span style="font-family:'Space Mono',monospace; font-size:0.65rem; color:var(--accent); letter-spacing:0.08em; font-weight:400;">· 2× promoted</span></div>
+      <div class="timeline-company"><a href="https://standardmetrics.io/" target="_blank" style="color:inherit; text-decoration:none; border-bottom:1px solid rgba(255,255,255,0.15);">Standard Metrics</a> · Remote – San Francisco, CA</div>
+      <p class="timeline-desc">Active contributor at a <a href="https://standardmetrics.io/announcing-our-23-7m-series-a-at-standard-metrics-formerly-known-as-quaestor/" target="_blank" style="color:var(--accent); text-decoration:none; border-bottom:1px solid rgba(99,220,180,0.3);">high-growth startup</a> managing 30+ enterprise clients — the world's premier VC, PE, and CVC firms. Tasked with preservation and growth of ARR, gauged by net dollar retention (NDR). Achieved 150% lifetime NDR by deeply understanding client needs, designing bespoke solutions, and deploying critical reporting across contract duration. Partnered with internal product &amp; engineering teams on development and rollout of proprietary offerings (e.g. 'global benchmarking'). Implemented AI and BI tooling — from document parsing to analytical agents — to bolster client reporting. Established health frameworks with automated playbook alerts. Built trusted thought-leader relationships with client C-suites, investors, and portfolio companies. Defined KPI targets and definitions to create a shared reporting language across firm and company fundraising activities. Recognized with the 2024 "Impact" award.</p>
+      <div class="timeline-tags">
+        <span class="tl-tag">enterprise csm</span>
+        <span class="tl-tag">ARR / NDR</span>
+        <span class="tl-tag">VC / PE</span>
+        <span class="tl-tag">AI tooling</span>
+        <span class="tl-tag">health frameworks</span>
+        <span class="tl-tag">LLMs</span>
+        <span class="tl-tag">kpi strategy</span>
+        <span class="tl-tag">🏆 impact award</span>
+      </div>
+
+      <!-- SM product diagram -->
+      <div style="margin-top:1.5rem; border:1px solid var(--border); overflow:hidden;">
+        <img src="images/SM Description.jpg" alt="How Standard Metrics works — product diagram" style="width:100%; display:block;" />
+      </div>
+
+      <!-- Client logo tabs -->
+      <div class="client-logos">
+        <div class="logo-tabs">
+          <button class="logo-tab active" data-tab="investors">Investors</button>
+          <button class="logo-tab" data-tab="companies">Companies</button>
+          <button class="logo-tab" data-tab="partnerships">Partnerships</button>
+        </div>
+
+        <div class="logo-grid" id="tab-investors">
+          <div class="logo-item"><img src="https://logo.clearbit.com/bvp.com" alt="Bessemer Venture Partners" onerror="this.classList.add('error')"><span class="logo-fallback">Bessemer</span></div>
+          <div class="logo-item"><img src="https://logo.clearbit.com/technexus.com" alt="TechNexus" onerror="this.classList.add('error')"><span class="logo-fallback">TechNexus</span></div>
+          <div class="logo-item"><img src="https://logo.clearbit.com/salesforce.com" alt="Salesforce Ventures" onerror="this.classList.add('error')"><span class="logo-fallback">Salesforce Ventures</span></div>
+          <div class="logo-item"><img src="https://logo.clearbit.com/generalcatalyst.com" alt="General Catalyst" onerror="this.classList.add('error')"><span class="logo-fallback">General Catalyst</span></div>
+          <div class="logo-item"><img src="https://logo.clearbit.com/madrona.com" alt="Madrona" onerror="this.classList.add('error')"><span class="logo-fallback">Madrona</span></div>
+          <div class="logo-item"><img src="https://logo.clearbit.com/accel.com" alt="Accel" onerror="this.classList.add('error')"><span class="logo-fallback">Accel</span></div>
+          <div class="logo-item"><img src="https://logo.clearbit.com/8vc.com" alt="8VC" onerror="this.classList.add('error')"><span class="logo-fallback">8VC</span></div>
+          <div class="logo-item"><img src="https://logo.clearbit.com/maveron.com" alt="Maveron" onerror="this.classList.add('error')"><span class="logo-fallback">Maveron</span></div>
+          <div class="logo-item"><img src="https://logo.clearbit.com/titaniumventures.com" alt="Titanium Ventures" onerror="this.classList.add('error')"><span class="logo-fallback">Titanium Ventures</span></div>
+          <div class="logo-item"><img src="https://logo.clearbit.com/sparkcapital.com" alt="Spark Capital" onerror="this.classList.add('error')"><span class="logo-fallback">Spark Capital</span></div>
+          <div class="logo-item"><img src="https://logo.clearbit.com/munichre.com" alt="Munich RE" onerror="this.classList.add('error')"><span class="logo-fallback">Munich RE</span></div>
+          <div class="logo-item"><img src="https://logo.clearbit.com/soci.ai" alt="Socii Capital" onerror="this.classList.add('error')"><span class="logo-fallback">Socii Capital</span></div>
+          <div class="logo-item"><img src="https://logo.clearbit.com/dcvc.com" alt="Data Collective" onerror="this.classList.add('error')"><span class="logo-fallback">Data Collective</span></div>
+          <div class="logo-item"><img src="https://logo.clearbit.com/marchcapital.com" alt="March Capital" onerror="this.classList.add('error')"><span class="logo-fallback">March Capital</span></div>
+        </div>
+
+        <div class="logo-grid hidden" id="tab-companies">
+          <div class="logo-item"><img src="https://logo.clearbit.com/affinity.co" alt="Affinity" onerror="this.classList.add('error')"><span class="logo-fallback">Affinity</span></div>
+          <div class="logo-item"><img src="https://logo.clearbit.com/azragames.com" alt="AZRA Games" onerror="this.classList.add('error')"><span class="logo-fallback">AZRA Games</span></div>
+          <div class="logo-item"><img src="https://logo.clearbit.com/stytch.com" alt="Stytch" onerror="this.classList.add('error')"><span class="logo-fallback">Stytch</span></div>
+          <div class="logo-item"><img src="https://logo.clearbit.com/hdvi.com" alt="HDVI" onerror="this.classList.add('error')"><span class="logo-fallback">HDVI</span></div>
+          <div class="logo-item"><img src="https://logo.clearbit.com/wildtype.com" alt="Wildtype" onerror="this.classList.add('error')"><span class="logo-fallback">Wildtype</span></div>
+          <div class="logo-item"><img src="https://logo.clearbit.com/spartanrace.com" alt="Spartan" onerror="this.classList.add('error')"><span class="logo-fallback">Spartan</span></div>
+          <div class="logo-item"><img src="https://logo.clearbit.com/dash.app" alt="Dash" onerror="this.classList.add('error')"><span class="logo-fallback">Dash</span></div>
+          <div class="logo-item"><img src="https://logo.clearbit.com/sidewalklabs.com" alt="Sidewalk Labs" onerror="this.classList.add('error')"><span class="logo-fallback">Sidewalk Labs</span></div>
+          <div class="logo-item"><img src="https://logo.clearbit.com/poggio.ai" alt="Poggio" onerror="this.classList.add('error')"><span class="logo-fallback">Poggio</span></div>
+          <div class="logo-item"><img src="https://logo.clearbit.com/bunker.io" alt="Bunker" onerror="this.classList.add('error')"><span class="logo-fallback">Bunker</span></div>
+          <div class="logo-item"><img src="https://logo.clearbit.com/carro.co" alt="Carro" onerror="this.classList.add('error')"><span class="logo-fallback">Carro</span></div>
+          <div class="logo-item"><img src="https://logo.clearbit.com/pave.dev" alt="Pave" onerror="this.classList.add('error')"><span class="logo-fallback">Pave</span></div>
+          <div class="logo-item"><img src="https://logo.clearbit.com/filmhub.com" alt="Filmhub" onerror="this.classList.add('error')"><span class="logo-fallback">Filmhub</span></div>
+        </div>
+
+        <div class="logo-grid hidden" id="tab-partnerships">
+          <div class="logo-item"><img src="https://logo.clearbit.com/standishmanagement.com" alt="Standish Management" onerror="this.classList.add('error')"><span class="logo-fallback">Standish Management</span></div>
+          <div class="logo-item"><img src="https://logo.clearbit.com/derivatas.com" alt="Derivatas" onerror="this.classList.add('error')"><span class="logo-fallback">Derivatas</span></div>
+          <div class="logo-item"><img src="https://logo.clearbit.com/affinity.co" alt="Affinity" onerror="this.classList.add('error')"><span class="logo-fallback">Affinity</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-date">2022 — 2023</div>
+      <div class="timeline-role">Client Solutions Manager, Enterprise</div>
+      <div class="timeline-company"><a href="https://www.yext.com/" target="_blank" style="color:inherit; text-decoration:none; border-bottom:1px solid rgba(255,255,255,0.15);">Yext, Inc.</a> · New York, NY</div>
+      <p class="timeline-desc">Engineered comprehensive digital marketing strategies for 11 Fortune 500 financial clients. Researched customer behavior quantitatively &amp; qualitatively to inform SEO tactics and train LLMs to enhance clients' omni-channel presence. Secured $8M+ TCV at-risk renewals and $800K+ in software upsells (110% NDR). Led organic and paid marketing strategies with A/B testing and Google Analytics optimization. Collaborated cross-functionally with product, legal, and engineering to advance automation solutions and 3rd-party integrations.</p>
+      <div class="timeline-tags">
+        <span class="tl-tag">enterprise csm</span>
+        <span class="tl-tag">SEO / SEM</span>
+        <span class="tl-tag">LLM training</span>
+        <span class="tl-tag">110% NDR</span>
+        <span class="tl-tag">fortune 500</span>
+        <span class="tl-tag">omni-channel</span>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-date">2020 — 2022</div>
+      <div class="timeline-role">Senior Advisory Associate <span style="font-family:'Space Mono',monospace; font-size:0.65rem; color:var(--accent); letter-spacing:0.08em; font-weight:400;">· promoted</span></div>
+      <div class="timeline-company"><a href="https://www.spglobal.com/market-intelligence/en" target="_blank" style="color:inherit; text-decoration:none; border-bottom:1px solid rgba(255,255,255,0.15);">S&amp;P Global</a> · New York, NY</div>
+      <p class="timeline-desc">Global market intelligence advisor to 12+ leading technology firms. Enhanced public investor relations strategies by sourcing and analyzing shareholder data from the Depository Trust Company, public filings, and proxy updates. Delivered comprehensive ownership trend reports and facilitated strategic meetings between client C-suites and prospective investors. Assisted multiple clients in qualifying for passive investments from major ETFs (INX, RUT) and established internal automations to improve targeting model accuracy — unlocking $MMs in active capital investment opportunities.</p>
+      <div class="timeline-tags">
+        <span class="tl-tag">investor relations</span>
+        <span class="tl-tag">shareholder analysis</span>
+        <span class="tl-tag">ETF qualification</span>
+        <span class="tl-tag">automations</span>
+        <span class="tl-tag">capital markets</span>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-dot" style="background:var(--accent2); box-shadow:0 0 12px rgba(123,108,246,0.6);"></div>
+      <div class="timeline-date">2019 — 2020</div>
+      <div class="timeline-role">Master of Engineering — Technical Entrepreneurship</div>
+      <div class="timeline-company">Lehigh University · Bethlehem, PA</div>
+      <p class="timeline-desc"><a href="https://engineering.lehigh.edu/te" target="_blank" style="color:var(--accent); text-decoration:none; border-bottom:1px solid rgba(99,220,180,0.3);">Graduate program</a> bridging engineering and entrepreneurship — focused on product development, startup strategy, and venture mechanics. Founded <strong>PropElder</strong>, a startup developing independent living solutions for the elderly, inspired by my grandparents. Laid the foundation for a career spanning both technical and business domains. Capped off with a Zoom graduation ceremony — truly the most entrepreneurial way to finish a degree in Technical Entrepreneurship.</p>
+      <div class="timeline-tags">
+        <span class="tl-tag">product dev</span>
+        <span class="tl-tag">entrepreneurship</span>
+        <span class="tl-tag">CAD / additive mfg</span>
+        <span class="tl-tag">PropElder</span>
+        <span class="tl-tag">class of 2020</span>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-dot" style="background:var(--accent2); box-shadow:0 0 12px rgba(123,108,246,0.6);"></div>
+      <div class="timeline-date">2015 — 2019</div>
+      <div class="timeline-role">Bachelor of Science — Finance &amp; Marketing</div>
+      <div class="timeline-company">Lehigh University · Bethlehem, PA</div>
+      <p class="timeline-desc">Double concentration in Finance and Marketing. Studied abroad at the <a href="https://www.sydney.edu.au/" target="_blank" style="color:var(--accent); text-decoration:none; border-bottom:1px solid rgba(99,220,180,0.3);">University of Sydney</a> (Australia, 2018 — focus on <a href="https://www.sydney.edu.au/arts/schools/sydney-school-of-education-and-social-work/indigenous-studies.html" target="_blank" style="color:var(--accent); text-decoration:none; border-bottom:1px solid rgba(99,220,180,0.3);">aboriginal culture</a> and <a href="https://www.sydney.edu.au/handbooks/arts-pg/coursework-areas/teaching-english-to-speakers-of-other-languages/learning-outcomes-graduate-certificate.html" target="_blank" style="color:var(--accent); text-decoration:none; border-bottom:1px solid rgba(99,220,180,0.3);">TESOL</a>) and at the <a href="https://www.irishcollegeleuven.eu/about-irish-college/" target="_blank" style="color:var(--accent); text-decoration:none; border-bottom:1px solid rgba(99,220,180,0.3);">Leuven Institute</a> (Belgium, 2016 — attended EU market forums at the <a href="https://ec.europa.eu/commission/presscorner/detail/en/memo_04_207" target="_blank" style="color:var(--accent); text-decoration:none; border-bottom:1px solid rgba(99,220,180,0.3);">Berlaymont</a> during Brexit referendums). Rush Chairman for Sigma Chi fraternity, member of the <a href="https://lu-invest.lehigh.edu/" target="_blank" style="color:var(--accent); text-decoration:none; border-bottom:1px solid rgba(99,220,180,0.3);">Lehigh Investment Club</a>, and played <a href="https://div2.clubbaseball.org/league/team/?season=4cf13048-4b11-4f93-bf29-014ac0087e06&team=90cc8fe2-c070-425a-8e62-9e2425a522cc#team-main" target="_blank" style="color:var(--accent); text-decoration:none; border-bottom:1px solid rgba(99,220,180,0.3);">Club Baseball</a>.</p>
+      <div class="timeline-tags">
+        <span class="tl-tag">finance</span>
+        <span class="tl-tag">marketing</span>
+        <span class="tl-tag">study abroad × 2</span>
+        <span class="tl-tag">sigma chi · rush chairman</span>
+        <span class="tl-tag">investment club</span>
+        <span class="tl-tag">club baseball</span>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-dot" style="background:var(--accent2); box-shadow:0 0 12px rgba(123,108,246,0.6);"></div>
+      <div class="timeline-date">2011 — 2015</div>
+      <div class="timeline-role">Hunterdon Central Regional High School</div>
+      <div class="timeline-company">Flemington, NJ</div>
+      <p class="timeline-desc">AP student and participant in <a href="https://hclamponline.com/3997/student-life/teen-pep/" target="_blank" style="color:var(--accent); text-decoration:none; border-bottom:1px solid rgba(99,220,180,0.3);">Teen PEP</a> — a highly selective peer education program. <a href="https://www.nj.com/highschoolsports/article/westfield-7-at-hunterdon-central-34-football/" target="_blank" style="color:var(--accent); text-decoration:none; border-bottom:1px solid rgba(99,220,180,0.3);">Varsity Football</a> (quarterback), <a href="https://www.lehighvalleylive.com/highschoolsports/article/baseball-hunterdon-central-routs-phillipsburg/" target="_blank" style="color:var(--accent); text-decoration:none; border-bottom:1px solid rgba(99,220,180,0.3);">Varsity</a> &amp; <a href="https://www.nj.com/hunterdon/2015/08/new_jersey_jays_18u_baseball_team_caps_off_success.html" target="_blank" style="color:var(--accent); text-decoration:none; border-bottom:1px solid rgba(99,220,180,0.3);">AAU Baseball</a> (lefty pitcher). Hosted a pre-recorded radio show that aired Friday nights on <a href="https://www.hcrhs.org/community/wcvh-fm" target="_blank" style="color:var(--accent); text-decoration:none; border-bottom:1px solid rgba(99,220,180,0.3);">90.5 WCVH</a>, and was part of the morning announcements team on the school's TV network.</p>
+      <div class="timeline-tags">
+        <span class="tl-tag">teen pep</span>
+        <span class="tl-tag">varsity &amp; AAU baseball</span>
+        <span class="tl-tag">varsity football</span>
+        <span class="tl-tag">radio · 90.5 WCVH</span>
+        <span class="tl-tag">TV · morning announcements</span>
+        <span class="tl-tag">AP coursework</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- INTERESTS -->
+<section id="interests" style="max-width:100%; background:var(--bg2); padding: 6rem 3rem;">
+<div style="max-width:1100px; margin:0 auto;">
+  <div class="section-header">
+    <span class="section-num">05</span>
+    <h2>Interests</h2>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="interests-grid">
+    <div class="interest-item" style="grid-column: 1 / -1; padding:1.5rem;">
+      <div class="interest-icon">🌍</div>
+      <div class="interest-title" style="font-size:1.05rem; margin-bottom:1rem;">World Traveler</div>
+
+      <!-- Visited countries map -->
+      <div id="world-map" style="width:100%; height:300px; margin-bottom:0.4rem; border:1px solid var(--border); border-radius:2px; overflow:hidden;"></div>
+      <div style="font-family:'Space Mono',monospace; font-size:0.58rem; color:var(--muted); letter-spacing:0.1em; margin-bottom:1.5rem; text-align:right;">14 COUNTRIES · 4 CONTINENTS · COUNTING</div>
+
+      <!-- Recent Trips -->
+      <div style="margin-bottom:1.75rem;">
+        <div style="font-family:'Space Mono',monospace; font-size:0.65rem; color:var(--accent); letter-spacing:0.12em; margin-bottom:0.75rem;">RECENT TRIPS</div>
+        <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:0.75rem; margin-bottom:1.25rem;">
+          <div class="trip-card">
+            <div class="trip-photo-slot"><img src="images/scottsdale.jpeg" alt="Scottsdale, AZ"></div>
+            <div class="trip-card-name">Scottsdale, AZ</div>
+          </div>
+          <div class="trip-card">
+            <div class="trip-photo-slot"><img src="images/ireland.JPEG" alt="Dublin, Ireland"></div>
+            <div class="trip-card-name">Dublin, Ireland</div>
+          </div>
+          <div class="trip-card">
+            <div class="trip-photo-slot"><img src="images/maui.jpeg" alt="Maui, HI"></div>
+            <div class="trip-card-name">Maui, HI</div>
+          </div>
+        </div>
+
+        <div style="font-family:'Space Mono',monospace; font-size:0.65rem; color:var(--accent2); letter-spacing:0.12em; margin-bottom:0.75rem;">TEAM OFFSITES</div>
+        <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:0.5rem;">
+          <div class="offsite-card"><span class="offsite-city">Salt Lake City, UT</span><span class="offsite-year">2023</span></div>
+          <div class="offsite-card"><span class="offsite-city">Chicago, IL</span><span class="offsite-year">2023</span></div>
+          <div class="offsite-card"><span class="offsite-city">New York, NY</span><span class="offsite-year">2024</span></div>
+          <div class="offsite-card"><span class="offsite-city">Portland, OR</span><span class="offsite-year">2024</span></div>
+          <div class="offsite-card"><span class="offsite-city">San Diego, CA</span><span class="offsite-year">2025</span></div>
+          <div class="offsite-card"><span class="offsite-city">Boston, MA</span><span class="offsite-year">2025</span></div>
+          <div class="offsite-card"><span class="offsite-city">San Francisco, CA</span><span class="offsite-year">2026</span></div>
+          <div class="offsite-card" style="border-color:rgba(123,108,246,0.3);"><span class="offsite-city">Denver, CO</span><span class="offsite-year" style="color:var(--accent2);">2026 · coming up</span></div>
+        </div>
+      </div>
+
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:1.5rem; align-items:start;">
+        <div>
+          <div style="font-family:'Space Mono',monospace; font-size:0.65rem; color:var(--accent); letter-spacing:0.12em; margin-bottom:0.75rem;">STUDY ABROAD</div>
+          <p class="interest-desc" style="margin-bottom:0.75rem;"><strong style="color:var(--text);">University of Sydney, Australia (2018)</strong> — focused on aboriginal culture and TESOL. Packed in skydiving over Wollongong, scuba diving the Great Barrier Reef (PADI certified), iFly indoor skydiving, and climbing the Sydney Harbour Bridge. The certificates are framed on the wall — proof it happened.</p>
+          <p class="interest-desc"><strong style="color:var(--text);">Leuven Institute, Belgium (2016)</strong> — EU markets &amp; attended Brexit referendum forums at the <a href="https://ec.europa.eu/commission/presscorner/detail/en/memo_04_207" target="_blank" style="color:var(--accent); text-decoration:none; border-bottom:1px solid rgba(99,220,180,0.3);">Berlaymont</a> in Brussels.</p>
+        </div>
+        <!-- Gallery -->
+        <div>
+          <!-- Main display -->
+          <div style="position:relative; overflow:hidden; background:var(--bg3); border:1px solid var(--border); margin-bottom:0.5rem; min-height:240px; max-height:420px;">
+            <img id="aus-main" src="images/aus-skydiving.gif" alt="Skydiving over Wollongong, Australia" style="width:100%; height:100%; object-fit:cover; display:block;" />
+          </div>
+          <!-- Thumbnails -->
+          <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:0.4rem;">
+            <img class="gallery-thumb"
+              src="images/aus-skydiving.gif" alt="Skydiving GIF"
+              style="width:100%; aspect-ratio:4/3; object-fit:cover; cursor:pointer; border:1px solid var(--accent); opacity:1; transition:opacity 0.2s;" />
+            <img class="gallery-thumb"
+              src="images/aus-certificates.jpg" alt="Australia certificates wall"
+              style="width:100%; aspect-ratio:4/3; object-fit:cover; cursor:pointer; border:1px solid var(--border); opacity:0.5; transition:opacity 0.2s;" />
+            <img class="gallery-thumb"
+              src="images/aus-scuba.jpg" alt="Bobby in scuba gear at the Great Barrier Reef"
+              style="width:100%; aspect-ratio:4/3; object-fit:cover; object-position:center top; cursor:pointer; border:1px solid var(--border); opacity:0.5; transition:opacity 0.2s;" />
+          </div>
+          <div style="font-family:'Space Mono',monospace; font-size:0.58rem; color:var(--muted); letter-spacing:0.08em; margin-top:0.4rem; text-align:center;">click thumbnails to browse</div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="interest-item" style="grid-column: 1 / -1; display:grid; grid-template-columns:1fr 1fr; gap:0; padding:0; overflow:hidden;">
+      <div style="overflow:hidden; max-height:320px;">
+        <img src="images/band-gig.jpg" alt="Bobby's band playing a live gig under a tent — classic rock set with guitars, drums, and keys" style="width:100%; height:100%; object-fit:cover; object-position:center top; display:block;" />
+      </div>
+      <div style="padding:1.5rem;">
+        <div class="interest-icon">🎹</div>
+        <div class="interest-title" style="font-size:1.05rem; margin-bottom:0.5rem;">Music</div>
+        <p class="interest-desc">Songwriter, pianist, and trombone player — but the real joy is getting the band together. That's my dad up there too. We love jamming to classic rock, and occasionally take it live. Music as a lens for creative pattern-recognition, emotional intelligence, and an excuse to turn up the amp.</p>
+        <a href="https://soundcloud.com/bobby-cole-27/tracks" target="_blank" style="display:inline-block; margin-top:0.75rem; font-family:'Space Mono',monospace; font-size:0.68rem; color:var(--accent); text-decoration:none; border-bottom:1px solid rgba(99,220,180,0.3); letter-spacing:0.05em;">Listen on SoundCloud ↗</a>
+      </div>
+    </div>
+    <div class="interest-item">
+      <div class="interest-icon">🤝</div>
+      <div class="interest-title">Volunteer Work</div>
+      <p class="interest-desc"><a href="https://www.fpcobb.org/" target="_blank" style="color:var(--accent); text-decoration:none; border-bottom:1px solid rgba(99,220,180,0.3);">Family Promise</a> · <a href="https://www.possefoundation.org/" target="_blank" style="color:var(--accent); text-decoration:none; border-bottom:1px solid rgba(99,220,180,0.3);">Posse Foundation</a> · <a href="https://www.guidingeyes.org/" target="_blank" style="color:var(--accent); text-decoration:none; border-bottom:1px solid rgba(99,220,180,0.3);">Guiding Eyes for the Blind</a> · <a href="https://hunterdonoutreach.org/" target="_blank" style="color:var(--accent); text-decoration:none; border-bottom:1px solid rgba(99,220,180,0.3);">Hunterdon Outreach Program</a>.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- BLOG / WRITING -->
+<section id="blog">
+  <div class="section-header">
+    <span class="section-num">06</span>
+    <h2>Writing</h2>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="blog-list">
+    <a class="blog-item" href="#" id="portco-open">
+      <div class="blog-item-left">
+        <div class="blog-item-tag">STRATEGY</div>
+        <div class="blog-item-title">The portco dilemma</div>
+      </div>
+      <div class="blog-item-date">2026</div>
+    </a>
+    <a class="blog-item" href="#" id="acronyms-open">
+      <div class="blog-item-left">
+        <div class="blog-item-tag">CS EVOLUTION</div>
+        <div class="blog-item-title">Changing acronyms: CSM → FDEs</div>
+      </div>
+      <div class="blog-item-date">2026</div>
+    </a>
+    <a class="blog-item" href="#" id="fantasy-open">
+      <div class="blog-item-left">
+        <div class="blog-item-tag">DATA · STRATEGY</div>
+        <div class="blog-item-title">Fantasy football taught me how to work with VC clients</div>
+      </div>
+      <div class="blog-item-date">2025</div>
+    </a>
+    <a class="blog-item" href="#">
+      <div class="blog-item-left">
+        <div class="blog-item-tag">STRATEGY</div>
+        <div class="blog-item-title">What 30 enterprise VC clients taught me about what data people actually want</div>
+      </div>
+      <div class="blog-item-date">Coming soon</div>
+    </a>
+    <a class="blog-item" href="#">
+      <div class="blog-item-left">
+        <div class="blog-item-tag">PRODUCT</div>
+        <div class="blog-item-title">The post-sales team is your best product research asset — here's why</div>
+      </div>
+      <div class="blog-item-date">Coming soon</div>
+    </a>
+    <a class="blog-item" href="#">
+      <div class="blog-item-left">
+        <div class="blog-item-tag">GROWTH</div>
+        <div class="blog-item-title">NDR as a north star: how net dollar retention shapes everything in B2B SaaS</div>
+      </div>
+      <div class="blog-item-date">Coming soon</div>
+    </a>
+  </div>
+</section>
+
+<!-- MEDIA -->
+<section id="media">
+  <div class="section-header">
+    <span class="section-num">07</span>
+    <h2>Media</h2>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="media-grid">
+
+    <!-- Podcast — full first row -->
+    <div class="media-card" style="grid-column: 1 / -1; display:flex; flex-direction:row; align-items:center; gap:3rem; padding:2.5rem; border-style:dashed; border-color:rgba(99,220,180,0.2);">
+      <img src="images/rabbit-cole-logo-v4.svg" alt="Down the Rabbit Cole" style="width:160px; height:auto; flex-shrink:0;" />
+      <div style="display:flex; flex-direction:column; gap:0.6rem;">
+        <div style="font-family:'Space Mono',monospace; font-size:0.62rem; letter-spacing:0.12em; color:var(--accent); background:var(--tag-bg); padding:0.2rem 0.6rem; display:inline-block; width:fit-content;">PODCAST · COMING Q4 2026</div>
+        <div style="font-size:1.5rem; font-weight:800; color:var(--text); line-height:1.2;">Down the Rabbit Cole</div>
+        <p style="font-size:0.9rem; color:var(--muted); line-height:1.7; max-width:560px;">An upcoming podcast series. More details coming soon.</p>
+      </div>
+    </div>
+
+    <!-- Personal speeches -->
+    <div class="media-card">
+      <div class="media-video-wrap">
+        <video controls preload="metadata">
+          <source src="images/engagement speech.MOV" type="video/mp4">
+          Your browser does not support this video.
+        </video>
+      </div>
+      <div class="media-card-body">
+        <span class="media-tag">PERSONAL</span>
+        <div class="media-title">Engagement Party Speech</div>
+        <div style="font-family:'Space Mono',monospace; font-size:0.62rem; color:var(--muted); margin-top:0.35rem; letter-spacing:0.05em;">2026</div>
+      </div>
+    </div>
+
+    <div class="media-card">
+      <div class="media-video-wrap">
+        <video controls preload="metadata">
+          <source src="images/sister's wedding.MOV" type="video/mp4">
+          Your browser does not support this video.
+        </video>
+      </div>
+      <div class="media-card-body">
+        <span class="media-tag">PERSONAL</span>
+        <div class="media-title">Sister's Wedding Speech</div>
+        <div style="font-family:'Space Mono',monospace; font-size:0.62rem; color:var(--muted); margin-top:0.35rem; letter-spacing:0.05em;">2025</div>
+      </div>
+    </div>
+
+    <!-- Add new media cards here -->
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-left">
+    © 2026 <span>Bobby Cole</span> &nbsp;·&nbsp; New Jersey
+  </div>
+  <div class="footer-links">
+    <!-- Update hrefs to your real profiles -->
+    <a href="https://www.linkedin.com/in/robert-cole-iii/" target="_blank">LinkedIn</a>
+<a href="https://github.com/bcole08" target="_blank">GitHub</a>
+    <a href="mailto:rs96cole+website@gmail.com">Email</a>
+  </div>
+</footer>
+
+
+<!-- PORTCO DILEMMA MODAL -->
+
+
+<div id="portco-overlay">
+  <div id="portco-modal">
+    <button class="close-btn">✕ CLOSE</button>
+    <div class="article-wrap">
+
+  <div class="article-eyebrow">STRATEGY · CUSTOMER SUCCESS</div>
+
+  <h1 class="article-title">The Portco Dilemma</h1>
+  <p class="article-subtitle">Understanding Customer Success' OKR — and what it will take to unlock the true potential of an investor reporting platform.</p>
+
+  <div class="article-meta">
+    <div class="meta-item">AUTHOR <span>Bobby Cole</span></div>
+    <div class="meta-item">TOPIC <span>Post-Sales · Product · AI</span></div>
+    <div class="meta-item">READ TIME <span>8 min</span></div>
+  </div>
+
+  <div class="article-body">
+
+    <p>Our platform is designed to be a free, powerful resource for portfolio companies — yet a significant portion of them are not fully leveraging its potential. This creates pain for VC clients and raises a crucial question: <em>why aren't all my portcos using it?</em></p>
+
+    <p>One of the key results on the customer success side is to push portco response rate percentages higher, as this is a key indicator of client churn risk. A client that receives less than 70% of responses is roughly <strong>100% more likely to churn</strong>.</p>
+
+    <p>From the CX perspective, we spend significant time actively managing requests, marking IRs complete when possible, and following up with portcos one by one. This often moves the needle marginally — from 68.9% to 69.0%. It is not a scalable solution.</p>
+
+    <div class="callout">
+      <p>The current paradigm views Standard Metrics as an obligation rather than a value-adding tool. This perception must change — and fast — as AI alternatives come to market.</p>
+    </div>
+
+    <p>We have the platform scope and potential to transform from a reporting <em>task</em> to a powerful reporting <em>tool</em> for portcos that directly enhances their ROI — and in turn, our paying customers' ROI.</p>
+
+    <h2>Understanding the Gaps</h2>
+
+    <div class="stat-row">
+      <div class="stat-box">
+        <span class="stat-num">~3 in 10</span>
+        <span class="stat-label">portcos do not respond to investor requests each quarter</span>
+      </div>
+      <div class="stat-box">
+        <span class="stat-num">~2 in 7</span>
+        <span class="stat-label">responding portcos submit via integration — often leading to disengagement</span>
+      </div>
+      <div class="stat-box">
+        <span class="stat-num">~5 in 10</span>
+        <span class="stat-label">cannot or won't use accounting integrations — stuck manually re-entering data</span>
+      </div>
+    </div>
+
+    <p><strong>Root causes for non-response</strong> include lack of information or rights, changes in contact personnel, missed notifications, and offline submissions. For those who do integrate, the assumption that reporting is "fully automated" leads to neglect of other platform functionality — including recurring confusion over submissions still requiring a manual click to submit.</p>
+
+    <p>For the remaining ~5 in 10 who submit manually, the experience often feels like double work: re-entering numbers already captured in financial statements or board decks, with confusion over whether to update data in the metrics tab or the investor reports. Many elect to submit documents only.</p>
+
+    <h2>The Current Value Proposition for Portcos</h2>
+
+    <p>The platform currently offers portcos several meaningful benefits — though each comes with meaningful friction or adoption barriers worth naming directly.</p>
+
+    <h3>1. One-to-Many Reporting</h3>
+    <p>Submit "December Cash in Bank" to one investor and it's available to submit to another. In theory, a significant efficiency unlock. In practice, this benefit reaches only a small subset of companies due to limited network effects, and requires multiple firms to request the same metrics. Portcos' reluctance to add offline investors further limits the feature's perceived value. Anduril — arguably the hottest portco in the world right now — is a useful case study in how even the most sophisticated companies can underutilize this.</p>
+
+    <h3>2. Global Benchmarking Scorecards</h3>
+    <p>Portcos gain insight into how they stack up against industry and stage benchmarks — a potentially critical asset during fundraising. The downside: privacy concerns, and companies in lower percentiles may disengage rather than lean in. Framing matters here.</p>
+
+    <h3>3. Company Updates</h3>
+    <p>Currently underutilized, but with significant untapped potential as data privacy becomes an increasingly sensitive topic for founders. Portcos are growing more attuned to <em>who</em> is accessing their data, <em>when</em>, and <em>why</em>. By surfacing visibility into which investors have viewed updates, how often, and which metrics they engaged with, Company Updates can evolve from a passive broadcast tool into an active trust-building mechanism. A feature that puts founders in the driver's seat could see dramatically higher adoption — and meaningfully deepen portco engagement with the platform.</p>
+
+    <h3>4. Company Asks</h3>
+    <p>Another underused gem with outsized relationship potential. VC value-add beyond capital is notoriously hard to operationalize — it often lives in Slack messages, ad-hoc intros, and verbal commitments that go nowhere. Company Asks can change that by creating a structured, trackable channel through which portcos can surface specific requests: a warm intro to a potential hire, a connection to a strategic partner, help navigating a fundraising process. For VCs, this is an opportunity to demonstrate active, measurable support. For portcos, it transforms the platform from a reporting obligation into something that actively unlocks their investors' networks.</p>
+
+    <div class="callout-risk">
+      <p>A recent example: Hedosophia became frustrated when a portfolio company sent a blast to all 45 of their internal users — including auditors. The ask-to-resolution workflow needs guardrails and routing intelligence, not just a send button.</p>
+    </div>
+
+    <h2>Proposed Enhancements to Maximize ROI for Portcos</h2>
+
+    <h3>1. Automated Board Deck Creation</h3>
+    <div class="feature-tag">HIGH IMPACT</div>
+    <p>Implement an automated board deck creation feature that incentivizes portcos to comprehensively populate their data, knowing they can generate a full report with one click. A partnership with a company like <a href="https://www.zeck.app/" target="_blank">Zeck</a> could be instrumental in bringing this to life — early feedback has been positive.</p>
+
+    <h3>2. Fundraising Network</h3>
+    <div class="feature-tag">STRATEGIC</div>
+    <p>Rebrand the portco-side platform to facilitate connections between VCs and portcos. Enable portcos to share metadata, contacts, and teaser data — making it easier to connect with potential investors during fundraising rounds. This transforms the platform from a reporting tool into a driver of business growth. VCs could even perform better due diligence and benchmarking in the process.</p>
+
+    <h3>3. AI-Powered Data Parsing &amp; Automation</h3>
+    <div class="feature-tag">TRANSFORMATIVE</div>
+    <p>One of the most significant friction points for portcos is the manual burden of data entry — re-keying numbers that already exist in board decks, financial statements, and investor updates. AI can eliminate this entirely.</p>
+
+    <p><strong>Document &amp; Data Parsing:</strong> Portcos regularly produce rich financial documents that contain exactly the data their investors are requesting. Rather than asking portcos to re-enter this data, AI can parse uploaded documents — PDFs, Excel files, board decks — and auto-populate the relevant metrics fields in the IR. It can map extracted data intelligently to the correct metric definitions, even when terminology differs across companies (e.g., "Net Revenue" vs. "Total Revenue"), flag discrepancies for human review, and learn portco-specific data patterns over time to improve accuracy.</p>
+
+    <p><strong>AI-Assisted Investor Communications:</strong> Beyond data, portcos spend significant time crafting the narrative that accompanies their numbers. AI can draft investor update narratives based on submitted metrics, benchmarking data, and prior updates — portcos edit rather than write from scratch. It can suggest talking points, auto-generate responses to common investor follow-up questions, and summarize quarter-over-quarter changes.</p>
+
+    <p><strong>Proactive Anomaly Detection:</strong> Alert portcos when a submitted metric looks anomalous compared to their own historical trends or stage/sector benchmarks. Prompt review before submission reduces embarrassing restatements — and highlights metrics where the portco is outperforming peers, reinforcing that their data on the platform is generating tangible value.</p>
+
+    <p><strong>Near-Term AI Quick Wins:</strong></p>
+    <ul>
+      <li>Provide portcos access to extracted metrics as data is parsed — eliminating redundant re-entry</li>
+      <li>Extend the Excel plug-in to portcos, allowing them to query and pull data for offline reporting</li>
+      <li>Develop an out-of-the-box investor update template integrated with the benchmarking scorecard</li>
+      <li>Add exports and one-click reports for portcos, with 'powered by Standard Metrics' tagging</li>
+      <li>Add investment details (fund names, round size, etc.) to the portco view</li>
+    </ul>
+
+    <hr>
+
+    <h2>Risks: The AI Threat to SaaS Engagement</h2>
+
+    <p>While AI presents enormous opportunities, it also introduces structural risks that must be confronted honestly. The same forces that could make the platform more powerful may simultaneously erode the behaviors that make it sticky.</p>
+
+    <h3>The MCP / Agentic AI Problem</h3>
+    <p>As AI assistants become more capable and MCP-style integrations proliferate, users gain the ability to extract and analyze data from SaaS platforms without ever opening them. A portco CFO could, in theory, drag and drop a board deck into an AI assistant and get investor-ready metrics, benchmarks, and a drafted update — all without logging in. The platform becomes infrastructure in the background rather than a destination in the foreground.</p>
+
+    <p>This is not hypothetical. The trend is already underway. Power users are increasingly orchestrating workflows entirely within AI interfaces, treating SaaS tools as data sources rather than workplaces.</p>
+
+    <div class="callout-risk">
+      <p><strong style="color:var(--accent3);">Session frequency drops.</strong> Portcos who previously logged in monthly may never need to open the product if an AI agent handles submission on their behalf. Feature surfaces — benchmarking scorecards, fundraising tools, board deck creation — only create value if portcos encounter them. Passive API consumers never will. And if the relationship with the platform is mediated entirely through an AI layer, the loyalty is to the AI — not to us. Replacing the platform becomes a configuration change, not a migration.</p>
+    </div>
+
+    <h3>Broader AI Risks for Vertical SaaS</h3>
+    <ul>
+      <li><strong>Commoditization of workflows:</strong> Tasks that once required a dedicated tool are becoming prompt-level actions. The workflow moat that traditional SaaS relied on is shrinking.</li>
+      <li><strong>New entrants with lower build costs:</strong> AI dramatically reduces the cost of building a credible competing product. A well-funded startup can replicate surface-level functionality in a fraction of the time.</li>
+      <li><strong>Disintermediation of the VC-portco relationship:</strong> If VCs begin using AI agents to directly query portco systems — accounting software, CRMs, cap table tools — the investor reporting layer could be bypassed entirely.</li>
+      <li><strong>Data quality risk:</strong> As AI-generated submissions increase, the risk of hallucinated or inconsistently defined metrics entering the platform rises — threatening the integrity of benchmarking data that underpins the entire value proposition.</li>
+    </ul>
+
+    <p>These risks don't argue against building AI features. They argue for building AI features in a way that <em>deepens</em> structural position rather than hollowing it out.</p>
+
+    <hr>
+
+    <div class="conclusion">
+      <p>The Portco Dilemma highlights a critical need for a shift in perception — particularly as the market becomes saturated with AI-native tooling. By enhancing the functionality of the platform and embedding AI directly into the portco experience, the goal is to transform it into a tool portcos actively want to use.</p>
+
+      <p>The risks outlined above are real, but they point toward a clear strategic imperative rather than a dead end: <strong>the companies that survive and win the AI transition in vertical SaaS will be those that convert their longitudinal data into a defensible moat that no new entrant can replicate.</strong></p>
+
+      <p>Every IR submission, every parsed document, every benchmarking query, and every fundraising interaction adds a layer to a proprietary dataset that grows more valuable over time. An AI assistant can help a portco draft an investor update — but it cannot tell that portco how their revenue retention compares to 400 Series B SaaS companies across the same stage and sector, because that data only exists here. That is the moat.</p>
+
+      <p class="conclusion-closer">The strategic bet: lean into AI as the delivery mechanism while ensuring the intelligence powering it flows through our data layer. Done right, the AI transition doesn't commoditize Standard Metrics — it entrenches it. The goal should be to not only meet but exceed portco expectations, demonstrating that Standard Metrics is the intelligent backbone of the VC ecosystem: a platform that becomes more indispensable, not less, as the world around it gets smarter.</p>
+    </div>
+
+  </div>
+</div>
+  </div>
+</div>
+
+
+<!-- CHANGING ACRONYMS MODAL -->
+
+
+<div id="acronyms-overlay">
+  <div id="acronyms-modal">
+    <button class="close-btn">✕ CLOSE</button>
+    <div class="article-wrap">
+
+  <div class="article-eyebrow">CS EVOLUTION · AI · POST-SALES</div>
+
+  <h1 class="article-title">Changing Acronyms: CSM → FDE</h1>
+  <p class="article-subtitle">Customer Success is quietly becoming one of the most technically demanding roles in SaaS. AI didn't create that shift — but it's accelerating it fast enough that the old job title no longer fits.</p>
+
+  <div class="article-meta">
+    <div class="meta-item">AUTHOR <span>Bobby Cole</span></div>
+    <div class="meta-item">TOPIC <span>Customer Success · AI · SaaS</span></div>
+    <div class="meta-item">READ TIME <span>7 min</span></div>
+  </div>
+
+  <div class="article-body">
+
+    <p>There's a piece by Anjor Kanekar that's been rattling around in my head since I read it. He uses a LEGO thought experiment to explain what makes a <a href="https://anjor.xyz/writing/2026/05/10/if-lego-had-forward-deployed-engineers/" target="_blank">Forward Deployed Engineer</a> different from a solutions engineer or a consultant. The FDE, he argues, doesn't just build the dragon the customer asked for — they drill holes in bricks, glue things together, hack the inventory, and then walk back to the product team holding a bag of weird custom pieces. The deliverable to the customer is the dragon. The deliverable to your own company is the bag of bricks you had to invent to build it.</p>
+
+    <p>I kept reading and thinking: <em>this is just a good CSM.</em></p>
+
+    <p>Not every CSM. Not the ones running QBRs off a slide template and calling it success. But the ones who are actually good at the job — who live in the customer's workflow, figure out what the product can't do yet, stitch together a solution anyway, and bring the signal back to product. That's the job. It's always been the job. We just never called it engineering.</p>
+
+    <div class="callout">
+      <p>The title is changing. The function was already there. AI is just making the gap between what a great CSM does and what the role is officially supposed to be impossible to ignore.</p>
+    </div>
+
+    <h2>What CSMs Actually Do (When They're Good)</h2>
+
+    <p>The standard job description for a Customer Success Manager reads something like: own the relationship, drive adoption, renew the contract, expand where possible. Health scores. QBRs. Playbooks. It's a retention function with a relationship wrapper.</p>
+
+    <p>But spend enough time in the role — especially at a technical B2B SaaS company — and the actual job looks very different. You're debugging a client's data integration at 9pm because their board deck is due tomorrow. You're writing SQL to pull a custom report because the product's built-in analytics doesn't slice exactly the way the CFO needs it. You're building a Notion doc that maps your platform's metric definitions to the client's internal glossary because nobody else has done it and it's the only thing standing between a confused portco and a completed IR.</p>
+
+    <p>You are, in the Kanekar sense, drilling holes in bricks.</p>
+
+    <p>The difference is that in the FDE model, the engineer is explicitly empowered to do that — and explicitly expected to bring the weird bricks back to product. In the CSM model, the drilling happens anyway, but it's invisible. It doesn't show up in the KPIs. It doesn't feed the roadmap in any structured way. And when the CSM leaves, the institutional knowledge walks out with them.</p>
+
+    <h2>The AI Unlock</h2>
+
+    <p>Here's where it gets interesting. For most of the history of SaaS customer success, there was a hard ceiling on how technically capable a CSM could be in practice. You could be curious, you could learn SQL, you could hack together a workaround in a spreadsheet — but actually <em>building</em> something for a client required engineering time you didn't have and couldn't justify for a single account.</p>
+
+    <p>AI has quietly demolished that ceiling.</p>
+
+    <div class="stat-row">
+      <div class="stat-box">
+        <span class="stat-num">1 afternoon</span>
+        <span class="stat-label">time to build a credible bespoke solution that used to require a sprint</span>
+      </div>
+      <div class="stat-box">
+        <span class="stat-num">0 tickets</span>
+        <span class="stat-label">engineering requests needed when a CSM can write and deploy their own tooling</span>
+      </div>
+      <div class="stat-box">
+        <span class="stat-num">∞ bricks</span>
+        <span class="stat-num" style="font-size:0.9rem; color:var(--muted); font-family:'Lora',serif; font-weight:400;">the library keeps expanding</span>
+      </div>
+    </div>
+
+    <p>A CSM who knows how to work with LLMs, APIs, and lightweight automation tools can now do in an afternoon what would have required a full engineering sprint eighteen months ago. They can build a client-specific data parser. They can wire up a Slack alert that pings when a health score dips. They can generate a first draft of a custom benchmark report, personalized to the client's stage and sector, in minutes. They can deploy an AI agent that answers the client's common data questions without routing through a human every time.</p>
+
+    <p>Kanekar flags this briefly at the end of his piece — that AI keeps handing you new bricks, and that a single engineer can now build a credible dragon in an afternoon. He notes it blurs the line between FDE and software engineer. What he doesn't fully explore is that it <em>also</em> blurs the line between FDE and CSM — and that for post-sales teams, this is probably the more consequential shift.</p>
+
+    <h2>The Misaligned Incentives Problem (Sound Familiar?)</h2>
+
+    <p>Kanekar makes a sharp point about FDE incentives: the moment you start measuring revenue per engagement, your FDEs stop being product scouts and start being account managers. They optimize for charging more for the dragon. They stop bringing back the weird bricks.</p>
+
+    <p>CSMs have been living this problem for years — except the incentive isn't per-engagement revenue, it's renewal rate and NPS. Both create the same distortion: optimize for the customer in front of you, at the expense of the signal that would improve the product for everyone.</p>
+
+    <div class="callout-risk">
+      <p>A CSM who spends three hours building a custom workaround for one client — and doesn't document it, doesn't flag it to product, doesn't ask whether it should exist in the platform — has delivered value to that account and exactly zero value to the company. The dragon was built. The weird bricks were thrown away.</p>
+    </div>
+
+    <p>The AI-enabled CSM makes this worse before it makes it better. When building bespoke solutions becomes cheap and fast, the temptation is to just keep building them — to become indispensable through accumulation of custom tooling rather than by pushing the product to absorb the pattern. That's a trap. It's also the fastest way to create a retention risk when that CSM eventually leaves.</p>
+
+    <p>The FDE model has a structural answer to this: the bag of bricks feedback loop is a job requirement, not a nice-to-have. Building without bringing back the signal is an incomplete deliverable. Post-sales teams that want to evolve toward this model need to make the same structural commitment — which means KPIs that reward product insight, not just retention metrics, and a real channel from CSMs to product that isn't just a Slack message into the void.</p>
+
+    <h2>What the Role Actually Becomes</h2>
+
+    <p>If you follow this logic out, the AI-enabled CSM starts to look less like a relationship manager and more like an embedded product engineer who happens to be deployed on the customer side. They're technical enough to build real things. They're close enough to the customer to know what's actually broken. And they're in a structurally unique position — sitting at the intersection of customer need and product capability — to see patterns that neither pure engineers nor pure salespeople will ever see.</p>
+
+    <p>This isn't a new archetype in enterprise software — Palantir built an entire company around the FDE model, and the results speak for themselves. What's new is that the tooling now exists to make this model accessible outside of Palantir-scale engineering organizations. A Series B SaaS company with a five-person CS team can now have one or two people operating in this way — building real things, closing real gaps, feeding real signal back to product — without hiring a dedicated forward deployment engineering org.</p>
+
+    <p>The question isn't whether this model is better. It clearly is, for the right kind of company. The question is whether the CSMs who are already operating this way — quietly drilling bricks, stitching together solutions, bringing back signal that never gets formally captured — will be recognized for what they're actually doing. And whether the companies they work for will build the structures that let that work compound, instead of evaporating every time someone takes a new job.</p>
+
+    <h2>So What's in a Name?</h2>
+
+    <p>Titles matter less than the actual work — but they're not nothing. A "Customer Success Manager" title signals a certain set of expectations: relationship-first, renewals-focused, reactive by default. A "Forward Deployed Engineer" title signals something different: technical, product-aware, proactive about closing gaps. Same underlying capability, different organizational contract.</p>
+
+    <p>The companies that figure this out first will have a meaningful structural advantage. Not because FDE is a magic title, but because naming the function correctly forces the org to support it correctly — with the right KPIs, the right product feedback channels, the right hiring profiles, and the right expectation that the person in this seat is doing two jobs simultaneously: delivering for the customer in front of them, and building the intelligence that improves the product for everyone else.</p>
+
+    <div class="conclusion">
+      <p>I don't think every CSM should become an FDE. The relationship and trust-building dimension of customer success is genuinely valuable and genuinely distinct — not every client wants their CSM to show up with a laptop and start hacking. Some clients just want to feel heard, and that's a real skill that has nothing to do with engineering.</p>
+
+      <p>But the best CSMs I've seen — the ones who drive outsized retention, who become genuinely trusted advisors to client C-suites, who seem to always know what the product needs before the product team does — they're already operating as FDEs. They just don't have the title. Or the bag to put the weird bricks in.</p>
+
+      <p class="conclusion-closer">AI didn't create this archetype. It just made it viable at scale — and made the cost of not investing in it high enough to finally notice. The acronym change is a symptom. The underlying shift is that post-sales is becoming an engineering function. The sooner organizations build around that reality, the better.</p>
+    </div>
+
+  </div>
+</div>
+  </div>
+</div>
+
+<!-- FANTASY FOOTBALL MODAL -->
+<div id="fantasy-overlay">
+  <div id="fantasy-modal">
+    <button class="close-btn">✕ CLOSE</button>
+    <div class="article-wrap">
+
+  <div class="article-eyebrow">DATA · STRATEGY · SPORTS</div>
+
+  <h1 class="article-title">Fantasy Football Taught Me How to Work With VC Clients</h1>
+  <p class="article-subtitle">Sports analytics has been running laps around enterprise data for decades. Here's what ten years of fantasy football taught me about portfolio intelligence — and why your VC firm should care.</p>
+
+  <div class="article-meta">
+    <div class="meta-item">AUTHOR <span>Bobby Cole</span></div>
+    <div class="meta-item">TOPIC <span>Data · VC · Portfolio Strategy</span></div>
+    <div class="meta-item">READ TIME <span>7 min</span></div>
+  </div>
+
+  <div class="article-body">
+
+    <p>I've been in three fantasy football leagues for over ten years. That's a decade of draft boards, trade negotiations, waiver wire pickups at midnight, and more spreadsheet time than I'd like to admit. At some point I stopped thinking of it as a hobby and started recognizing it for what it actually was: a live training ground for data-driven decision-making under uncertainty.</p>
+
+    <p>Sports analytics has been ahead of the enterprise curve for a long time. Billy Beane was building expected value models while most Fortune 500 companies were still running on gut instinct and quarterly reports. The NBA revolutionized player efficiency ratings before "data-driven culture" became a corporate buzzword. Sports front offices were doing predictive modeling, regression analysis, and portfolio construction long before those words showed up in VC pitch decks.</p>
+
+    <p>So when I started working with VC and PE firms — organizations sitting on some of the richest longitudinal company data in existence — I kept noticing the same pattern: the raw material for world-class analytics was all there. What was missing was the framework to use it.</p>
+
+    <div class="callout">
+      <p>Fantasy football is, at its core, a portfolio management problem. You draft assets, monitor performance, manage risk, make bets on upside, and cut your losses when the data tells you to. Sound familiar?</p>
+    </div>
+
+    <h2>The Draft Is Your Investment Thesis</h2>
+
+    <p>Every fantasy season starts with a draft. You have a finite number of picks, a finite budget of roster slots, and a market of available players — each with a price implied by their draft position. The best managers don't just chase last year's stats. They find players whose underlying metrics suggest the box score hasn't caught up yet. Targets per route run. Yards after contact. Red zone opportunity share. The surface number is the outcome. The analytics tell you whether it's repeatable.</p>
+
+    <p>VC firms do the same thing at the fund level — but the data infrastructure to support it often lags. A firm building a new fund thesis needs to know which metrics actually predicted outlier outcomes in their prior portfolio, not just which companies had the best-looking revenue curves. Leading indicators over lagging ones. Process over results. The firms I work with that operate this way make better decisions at every stage — from initial check to follow-on to board-level resource allocation.</p>
+
+    <h2>In-Season Management Is Active Portfolio Work</h2>
+
+    <p>Drafting well gets you maybe 60% of the way there. The other 40% is in-season management — which is where most people either win or lose their leagues. This is where the data discipline separates the serious managers from the casual ones.</p>
+
+    <p>The waiver wire is the most underrated tool in fantasy. Every week, a set of players becomes available — some because of injury, some because of emerging opportunity, some because their previous owner gave up too early. The best managers are running the same math on a Tuesday night that a good VC runs before a bridge round: what's the expected value here? What am I giving up to get it? What does the data say about the upside versus the risk?</p>
+
+    <div class="stat-row">
+      <div class="stat-box">
+        <span class="stat-num">3</span>
+        <span class="stat-label">leagues running simultaneously for 10+ years — each with different scoring systems, roster formats, and competitive dynamics</span>
+      </div>
+      <div class="stat-box">
+        <span class="stat-num">Leading</span>
+        <span class="stat-label">indicators beat lagging ones every time — in fantasy and in portfolio monitoring</span>
+      </div>
+      <div class="stat-box">
+        <span class="stat-num">The Wire</span>
+        <span class="stat-label">waiver decisions mirror follow-on investment logic — triage, expected value, opportunity cost</span>
+      </div>
+    </div>
+
+    <p>For a VC portfolio, the waiver wire equivalent is the health monitoring layer — the system that flags which companies are showing early signs of stress before it becomes a crisis, and which ones are quietly outperforming before anyone notices. The firms with this infrastructure make better triage decisions. They know where to allocate partner time. They don't get surprised.</p>
+
+    <h2>The "Eye Test" Problem</h2>
+
+    <p>Every fantasy manager has that one guy in the league who trusts his gut over the numbers. He watched the game, he has a feel for the player, he just knows. And sometimes he's right — which makes him impossible to reason with for the rest of the season.</p>
+
+    <p>The VC equivalent is the partner who has a feel for a founder. Gut instinct is real and valuable — pattern recognition built over decades of sourcing deals is not nothing. But gut and data are most powerful together, not in opposition. The firms I've seen operate at the highest level use data to stress-test conviction, not replace it. They go into a board meeting knowing the numbers already tell a story — and they use that story to ask better questions, not to skip the conversation.</p>
+
+    <h2>Portfolio Construction Is Not Just About Stars</h2>
+
+    <p>The most common mistake in fantasy is over-indexing on upside at the expense of floor. You load up on boom-or-bust players chasing the big week, and then you lose by one point in the semifinals because three of them had bye weeks and your bench was an afterthought.</p>
+
+    <p>VC portfolio construction has the same tension. The moonshot investments are necessary — that's the asset class. But the firms with the most durable performance think carefully about the shape of the whole portfolio: concentration risk, stage diversification, sector exposure, follow-on reserves. It's not just about picking winners. It's about building a roster that can absorb variance and still compete.</p>
+
+    <div class="callout-risk">
+      <p>The best fantasy managers I know don't just optimize for the best possible week. They optimize for the best possible season — which means making decisions that protect against downside, not just chase upside. That distinction matters more than most people realize.</p>
+    </div>
+
+    <h2>What Sports Got Right That Enterprise Is Still Learning</h2>
+
+    <p>Sports analytics normalized something that enterprise data culture is still wrestling with: the idea that historical outcomes are a lagging indicator, and that the real edge lives in process metrics. Completion percentage over touchdown totals. Routes run over receptions. Yards before contact over yards after.</p>
+
+    <h2>Exhibit A: Howie Roseman and the Eagles</h2>
+
+    <p>I'd be lying if I said this wasn't personal. I'm an Eagles fan. And watching Howie Roseman quietly build one of the most analytics-forward front offices in the NFL over the past two to three years has been — professionally, not just emotionally — deeply validating.</p>
+
+    <p>While most NFL franchises were still treating analytics as a supplementary function, Roseman was restructuring the Eagles' entire decision-making infrastructure around it. He made a sustained, deliberate commitment to hiring data analysts — not as support staff, but as core contributors to draft evaluation, contract modeling, and roster construction. He brought in people with backgrounds in quantitative finance and applied statistics. He built systems that could surface the kind of signal that doesn't show up in a box score until it's already too late to act on.</p>
+
+    <div class="callout">
+      <p>The Eagles didn't start winning because they got lucky. They started winning because they built the infrastructure to make better decisions — systematically, repeatedly, at scale. That's not a hot streak. That's a compounding advantage.</p>
+    </div>
+
+    <p>The results followed. Consecutive Super Bowl appearances. A roster built on undervalued contracts, late-round draft hits, and trades that looked questionable until the data said otherwise. Roseman didn't just talk about analytics — he institutionalized it. And I'd argue that distinction is exactly what separates the VC firms I most respect from the ones still waiting for the quarterly IR to tell them what the leading indicators already knew.</p>
+
+    <div class="stat-row">
+      <div class="stat-box">
+        <span class="stat-num">2–3 yrs</span>
+        <span class="stat-label">of deliberate analytics investment under Roseman before the results became undeniable</span>
+      </div>
+      <div class="stat-box">
+        <span class="stat-num">Infrastructure</span>
+        <span class="stat-label">wins. Not a single great pick — a system that consistently finds signal others miss</span>
+      </div>
+      <div class="stat-box">
+        <span class="stat-num">Fly Eagles Fly</span>
+        <span class="stat-label">obligatory. but also: this is what it looks like when a front office takes data seriously</span>
+      </div>
+    </div>
+
+    <p>In a VC portfolio context, this translates directly. Revenue is a lagging indicator. So is churn. The leading signals — product engagement depth, net revenue retention trends, sales cycle velocity, hiring patterns — tell you what's coming six to twelve months before it shows up in the headline number. The firms that have built the data infrastructure to surface those signals consistently are playing a different game than the ones waiting for the quarterly IR to arrive.</p>
+
+    <p>I've spent years helping VC and PE clients build exactly that infrastructure. Defining KPIs that actually predict outcomes. Creating health frameworks with automated alerts. Building benchmarking systems that let a portfolio company understand where they stand before a fundraise — not during one. The playbook isn't that different from what a good fantasy manager does every week. You're just managing a more consequential roster.</p>
+
+    <div class="conclusion">
+      <p>Ten years of fantasy football didn't make me a better analyst in any direct sense. But it did build a reflex — the habit of asking what the data actually says before acting on what feels right, of looking for the metric behind the metric, of treating every decision as a portfolio problem with tradeoffs rather than an isolated judgment call.</p>
+
+      <p class="conclusion-closer">Sports figured this out decades ago. The best VC firms are getting there. The ones who close the gap fastest — who build the data infrastructure to see their portfolios the way a front office sees a roster — will have a structural advantage that compounds every year. I'm convinced of that. And I'd bet a waiver claim on it.</p>
+    </div>
+
+  </div>
+</div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/jsvectormap@1.5.3/dist/js/jsvectormap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jsvectormap@1.5.3/dist/maps/world.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
