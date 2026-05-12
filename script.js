@@ -11,25 +11,17 @@ function closeModal(id) {
 document.addEventListener('DOMContentLoaded', () => {
 
   // Modal: open
-  document.getElementById('portco-open').addEventListener('click', (e) => {
-    e.preventDefault();
-    openModal('portco-overlay');
-  });
   document.getElementById('acronyms-open').addEventListener('click', (e) => {
     e.preventDefault();
     openModal('acronyms-overlay');
   });
 
   // Modal: close on overlay background click
-  document.getElementById('portco-overlay').addEventListener('click', (e) => {
-    if (e.target === e.currentTarget) closeModal('portco-overlay');
-  });
   document.getElementById('acronyms-overlay').addEventListener('click', (e) => {
     if (e.target === e.currentTarget) closeModal('acronyms-overlay');
   });
 
   // Modal: close buttons
-  document.querySelector('#portco-overlay .close-btn').addEventListener('click', () => closeModal('portco-overlay'));
   document.querySelector('#acronyms-overlay .close-btn').addEventListener('click', () => closeModal('acronyms-overlay'));
   document.querySelector('#fantasy-overlay .close-btn').addEventListener('click', () => closeModal('fantasy-overlay'));
 
