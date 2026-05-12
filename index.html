@@ -600,49 +600,64 @@
     <div class="section-line"></div>
   </div>
 
-  <div class="blog-list">
-    <a class="blog-item" href="#" id="acronyms-open">
+  <div class="blog-controls">
+    <div class="blog-filters">
+      <button class="blog-filter active" data-filter="all">All</button>
+      <button class="blog-filter" data-filter="2026">2026</button>
+      <button class="blog-filter" data-filter="2025">2025</button>
+      <button class="blog-filter" data-filter="coming-soon">Coming Soon</button>
+    </div>
+  </div>
+
+  <div class="blog-list" id="blog-list">
+    <a class="blog-item" href="#" id="acronyms-open" data-year="2026">
       <div class="blog-item-left">
         <div class="blog-item-tag">CS EVOLUTION</div>
         <div class="blog-item-title">Changing acronyms: CSM → FDEs</div>
       </div>
       <div class="blog-item-date">2026</div>
     </a>
-    <a class="blog-item" href="#" id="fantasy-open">
-      <div class="blog-item-left">
-        <div class="blog-item-tag">DATA · STRATEGY</div>
-        <div class="blog-item-title">Fantasy football taught me how to work with VC clients</div>
-      </div>
-      <div class="blog-item-date">2025</div>
-    </a>
-    <a class="blog-item" href="#" id="thirtyclients-open">
-      <div class="blog-item-left">
-        <div class="blog-item-tag">STRATEGY</div>
-        <div class="blog-item-title">What 30 enterprise VC clients taught me about what data people actually want</div>
-      </div>
-      <div class="blog-item-date">2025</div>
-    </a>
-    <a class="blog-item" href="#" id="birthday-open">
+    <a class="blog-item" href="#" id="birthday-open" data-year="2026">
       <div class="blog-item-left">
         <div class="blog-item-tag">PERSONAL</div>
         <div class="blog-item-title">Capricorn Energy</div>
       </div>
       <div class="blog-item-date">2026</div>
     </a>
-    <div class="blog-item blog-item--disabled">
+    <a class="blog-item" href="#" id="fantasy-open" data-year="2025">
+      <div class="blog-item-left">
+        <div class="blog-item-tag">DATA · STRATEGY</div>
+        <div class="blog-item-title">Fantasy football taught me how to work with VC clients</div>
+      </div>
+      <div class="blog-item-date">2025</div>
+    </a>
+    <a class="blog-item" href="#" id="thirtyclients-open" data-year="2025">
+      <div class="blog-item-left">
+        <div class="blog-item-tag">STRATEGY</div>
+        <div class="blog-item-title">What 30 enterprise VC clients taught me about what data people actually want</div>
+      </div>
+      <div class="blog-item-date">2025</div>
+    </a>
+    <div class="blog-item blog-item--disabled" data-year="coming-soon">
       <div class="blog-item-left">
         <div class="blog-item-tag">PRODUCT</div>
         <div class="blog-item-title">The post-sales team is your best product research asset — here's why</div>
       </div>
       <div class="blog-item-date">Coming soon</div>
     </div>
-    <div class="blog-item blog-item--disabled">
+    <div class="blog-item blog-item--disabled" data-year="coming-soon">
       <div class="blog-item-left">
         <div class="blog-item-tag">GROWTH</div>
         <div class="blog-item-title">NDR as a north star: how net dollar retention shapes everything in B2B SaaS</div>
       </div>
       <div class="blog-item-date">Coming soon</div>
     </div>
+  </div>
+
+  <div class="blog-pagination" id="blog-pagination">
+    <button class="blog-page-btn" id="blog-prev" disabled>← Prev</button>
+    <span class="blog-page-indicator" id="blog-page-indicator">Page 1 of 2</span>
+    <button class="blog-page-btn" id="blog-next">Next →</button>
   </div>
 </section>
 

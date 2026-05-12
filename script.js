@@ -64,6 +64,64 @@ document.addEventListener('DOMContentLoaded', () => {
     if (e.target === e.currentTarget) closeModal('fantasy-overlay');
   });
 
+  // Blog: filter + pagination
+  const POSTS_PER_PAGE = 3;
+  let currentFilter = 'all';
+  let currentPage = 1;
+
+  function getBlogItems() {
+    return Array.from(document.querySelectorAll('#blog-list .blog-item'));
+  }
+
+  function getFilteredItems() {
+    return getBlogItems().filter(item => {
+      if (currentFilter === 'all') return true;
+      return item.dataset.year === currentFilter;
+    });
+  }
+
+  function renderBlog() {
+    const allItems = getBlogItems();
+    const filtered = getFilteredItems();
+    const totalPages = Math.max(1, Math.ceil(filtered.length / POSTS_PER_PAGE));
+    if (currentPage > totalPages) currentPage = 1;
+
+    const start = (currentPage - 1) * POSTS_PER_PAGE;
+    const visible = new Set(filtered.slice(start, start + POSTS_PER_PAGE));
+
+    allItems.forEach(item => {
+      item.style.display = visible.has(item) ? '' : 'none';
+    });
+
+    document.getElementById('blog-prev').disabled = currentPage === 1;
+    document.getElementById('blog-next').disabled = currentPage === totalPages;
+    document.getElementById('blog-page-indicator').textContent = `Page ${currentPage} of ${totalPages}`;
+
+    const pagination = document.getElementById('blog-pagination');
+    pagination.style.display = totalPages <= 1 ? 'none' : 'flex';
+  }
+
+  document.querySelectorAll('.blog-filter').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.blog-filter').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      currentFilter = btn.dataset.filter;
+      currentPage = 1;
+      renderBlog();
+    });
+  });
+
+  document.getElementById('blog-prev').addEventListener('click', () => {
+    if (currentPage > 1) { currentPage--; renderBlog(); }
+  });
+
+  document.getElementById('blog-next').addEventListener('click', () => {
+    const totalPages = Math.ceil(getFilteredItems().length / POSTS_PER_PAGE);
+    if (currentPage < totalPages) { currentPage++; renderBlog(); }
+  });
+
+  renderBlog();
+
   // Client logo tabs
   document.querySelectorAll('.logo-tab').forEach(tab => {
     tab.addEventListener('click', () => {
