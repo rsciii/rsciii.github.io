@@ -290,6 +290,11 @@
     margin-bottom: 0;
   }
 
+  .section-is-collapsed {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+  }
+
   .section-num {
     font-family: 'Space Mono', monospace;
     font-size: 0.75rem;

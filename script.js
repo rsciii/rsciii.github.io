@@ -72,6 +72,9 @@ document.addEventListener('DOMContentLoaded', () => {
       const isCollapsed = body.classList.toggle('collapsed');
       header.classList.toggle('is-collapsed', isCollapsed);
       btn.textContent = isCollapsed ? '+' : '−';
+      // Tighten section padding when collapsed
+      const section = header.closest('section');
+      if (section) section.classList.toggle('section-is-collapsed', isCollapsed);
     });
   });
 
