@@ -31,6 +31,20 @@ document.addEventListener('DOMContentLoaded', () => {
     openModal('fantasy-overlay');
   });
 
+  // 30 clients modal: open
+  document.getElementById('thirtyclients-open').addEventListener('click', (e) => {
+    e.preventDefault();
+    openModal('thirtyclients-overlay');
+  });
+
+  // 30 clients modal: close on overlay background click
+  document.getElementById('thirtyclients-overlay').addEventListener('click', (e) => {
+    if (e.target === e.currentTarget) closeModal('thirtyclients-overlay');
+  });
+
+  // 30 clients modal: close button
+  document.querySelector('#thirtyclients-overlay .close-btn').addEventListener('click', () => closeModal('thirtyclients-overlay'));
+
   // Fantasy modal: close on overlay background click
   document.getElementById('fantasy-overlay').addEventListener('click', (e) => {
     if (e.target === e.currentTarget) closeModal('fantasy-overlay');

@@ -1370,3 +1370,117 @@
     #fantasy-modal { padding: 2rem 1.5rem; margin: 1rem auto; }
     #fantasy-modal h1.article-title { font-size: 1.8rem; }
   }
+
+/* ─────────────────────────────────────────────────────── */
+
+#thirtyclients-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 500;
+    background: rgba(0,0,0,0.85);
+    align-items: flex-start;
+    justify-content: center;
+    padding: 2rem 1rem;
+    overflow-y: auto;
+  }
+  #thirtyclients-modal {
+    background: #0e0e14;
+    border: 1px solid rgba(99,220,180,0.2);
+    max-width: 740px;
+    width: 100%;
+    margin: 4rem auto;
+    padding: 3rem 3.5rem;
+    position: relative;
+    font-family: 'Lora', serif;
+    color: #c8c8d8;
+    line-height: 1.85;
+  }
+  #thirtyclients-modal .close-btn {
+    position: absolute;
+    top: 1.25rem; right: 1.5rem;
+    font-family: 'Space Mono', monospace;
+    font-size: 0.75rem; color: var(--muted);
+    background: none; border: 1px solid rgba(255,255,255,0.1);
+    padding: 0.3rem 0.75rem; cursor: pointer;
+    letter-spacing: 0.08em; transition: color 0.2s, border-color 0.2s;
+  }
+  #thirtyclients-modal .close-btn:hover { color: var(--accent); border-color: var(--accent); }
+  #thirtyclients-modal .article-eyebrow {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.68rem; color: var(--accent);
+    letter-spacing: 0.15em; margin-bottom: 1.25rem;
+    display: flex; align-items: center; gap: 0.75rem;
+  }
+  #thirtyclients-modal .article-eyebrow::before {
+    content: ''; display: inline-block;
+    width: 24px; height: 1px; background: var(--accent);
+  }
+  #thirtyclients-modal h1.article-title {
+    font-family: 'Syne', sans-serif;
+    font-size: 2.4rem; font-weight: 800;
+    line-height: 1.05; letter-spacing: -0.02em;
+    color: #e8e8f0; margin-bottom: 0.75rem;
+  }
+  #thirtyclients-modal .article-subtitle {
+    font-size: 1.05rem; color: var(--muted);
+    font-style: italic; margin-bottom: 1.5rem; line-height: 1.6;
+  }
+  #thirtyclients-modal .article-meta {
+    display: flex; gap: 1.5rem; flex-wrap: wrap;
+    padding: 1rem 0; border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border); margin-bottom: 2.5rem;
+  }
+  #thirtyclients-modal .meta-item {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.65rem; color: var(--muted); letter-spacing: 0.08em;
+  }
+  #thirtyclients-modal .meta-item span { color: #e8e8f0; }
+  #thirtyclients-modal .article-body p {
+    font-size: 1rem; line-height: 1.85;
+    color: #c8c8d8; margin-bottom: 1.4rem;
+  }
+  #thirtyclients-modal .article-body strong { color: #e8e8f0; font-weight: 600; }
+  #thirtyclients-modal .article-body em { color: #b0b0c8; }
+  #thirtyclients-modal .article-body h2 {
+    font-family: 'Syne', sans-serif; font-size: 1.5rem; font-weight: 800;
+    color: #e8e8f0; margin: 3rem 0 0.75rem;
+    padding-top: 1rem; border-top: 1px solid var(--border);
+  }
+  #thirtyclients-modal .callout {
+    border-left: 3px solid var(--accent); background: var(--bg2);
+    padding: 1rem 1.25rem; margin: 1.5rem 0; border-radius: 0 4px 4px 0;
+  }
+  #thirtyclients-modal .callout p { margin-bottom: 0 !important; font-style: italic; color: #e8e8f0 !important; }
+  #thirtyclients-modal .callout-risk {
+    border-left: 3px solid var(--accent3); background: rgba(240,160,90,0.05);
+    padding: 1rem 1.25rem; margin: 1.5rem 0; border-radius: 0 4px 4px 0;
+  }
+  #thirtyclients-modal .callout-risk p { margin-bottom: 0 !important; color: #d4b896 !important; font-size: 0.95rem !important; }
+  #thirtyclients-modal .stat-row {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 1px; background: var(--border); margin: 1.5rem 0;
+  }
+  #thirtyclients-modal .stat-box { background: var(--bg3); padding: 1rem 1.25rem; }
+  #thirtyclients-modal .stat-num {
+    font-family: 'Syne', sans-serif; font-size: 1.6rem; font-weight: 800;
+    color: var(--accent); display: block; line-height: 1; margin-bottom: 0.3rem;
+  }
+  #thirtyclients-modal .stat-label {
+    font-family: 'Space Mono', monospace; font-size: 0.62rem;
+    color: var(--muted); letter-spacing: 0.08em; line-height: 1.4;
+  }
+  #thirtyclients-modal .conclusion {
+    background: var(--bg2); border: 1px solid var(--border-accent);
+    padding: 1.5rem 1.75rem; margin-top: 2.5rem;
+  }
+  #thirtyclients-modal .conclusion p { color: #c8c8d8 !important; margin-bottom: 0.9rem !important; }
+  #thirtyclients-modal .conclusion p:last-child { margin-bottom: 0 !important; }
+  #thirtyclients-modal .conclusion .conclusion-closer {
+    font-size: 0.97rem !important; color: #e8e8f0 !important; font-style: italic;
+    border-top: 1px solid var(--border); padding-top: 1rem; margin-top: 1rem !important;
+  }
+  @media (max-width: 600px) {
+    #thirtyclients-modal { padding: 2rem 1.5rem; margin: 1rem auto; }
+    #thirtyclients-modal h1.article-title { font-size: 1.8rem; }
+  }
