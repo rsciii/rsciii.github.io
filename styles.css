@@ -939,15 +939,13 @@
   .logo-item img.error { display: none; }
 
   .logo-fallback {
-    display: none;
+    display: block;
     font-family: 'Space Mono', monospace;
     font-size: 0.6rem;
     color: var(--muted);
     letter-spacing: 0.06em;
     text-align: center;
   }
-
-  .logo-item img.error ~ .logo-fallback { display: block; }
 
   /* MEDIA */
   .media-grid {
