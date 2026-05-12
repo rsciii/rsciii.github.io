@@ -15,6 +15,10 @@
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
 
+  html {
+    overflow-x: hidden;
+  }
+
   body {
     background: var(--bg);
     color: var(--text);
@@ -1033,6 +1037,7 @@
 
     /* SECTIONS */
     section { padding: 3.5rem 1.25rem; }
+    section[style*="padding"] { padding-left: 1.25rem !important; padding-right: 1.25rem !important; }
 
     /* ABOUT */
     .about-grid { grid-template-columns: 1fr; gap: 2rem; }
@@ -1040,6 +1045,23 @@
     /* SKILLS */
     section[id="skills"] > div > div[style*="grid-template-columns"] {
       grid-template-columns: 1fr !important;
+    }
+
+    /* INTERESTS — inline grids */
+    /* trip cards: 4 col → 2 col */
+    div[style*="grid-template-columns:repeat(4,1fr)"] {
+      grid-template-columns: repeat(2, 1fr) !important;
+    }
+    /* study abroad + gallery side-by-side → stack */
+    div[style*="grid-template-columns:1fr 1fr"][style*="align-items:start"] {
+      grid-template-columns: 1fr !important;
+    }
+    /* music/volunteer full-width two-column card → stack */
+    .interest-item[style*="grid-column: 1 / -1"][style*="grid-template-columns:1fr 1fr"] {
+      grid-template-columns: 1fr !important;
+    }
+    .interest-item[style*="grid-column: 1 / -1"] > div[style*="overflow:hidden"] {
+      max-height: 220px !important;
     }
 
     /* PROJECTS */
