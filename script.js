@@ -188,6 +188,11 @@ document.addEventListener('DOMContentLoaded', () => {
       strokeWidth: 1,
     },
     selectedRegions: ['US', 'CA', 'MX', 'GB', 'IE', 'IT', 'VA', 'MC', 'BE', 'NL', 'FR', 'ES', 'AU', 'NZ'],
+    onLoaded() {
+      // French Guiana is an overseas territory of FR but Bobby hasn't been to South America
+      const gf = document.querySelector('#world-map path[data-code="GF"]');
+      if (gf) gf.setAttribute('fill', '#2a2a35');
+    },
   });
 
   // Gallery: thumbnail click swaps main image and updates active opacity
