@@ -854,6 +854,42 @@
     letter-spacing: 0.06em;
   }
 
+  .golf-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0.5rem;
+  }
+
+  .golf-card {
+    background: var(--bg3);
+    border: 1px solid var(--border);
+    padding: 0.6rem 0.85rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    transition: border-color 0.2s;
+  }
+
+  .golf-card:hover { border-color: var(--accent); }
+
+  .golf-name {
+    font-family: 'Syne', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--text);
+  }
+
+  .golf-state {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.58rem;
+    color: var(--accent);
+    letter-spacing: 0.08em;
+  }
+
+  @media (max-width: 768px) {
+    .golf-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+
   .trip-card {
     display: flex;
     flex-direction: column;
