@@ -832,6 +832,12 @@
   }
 
   /* TRIP PHOTO SLOTS */
+  .skill-list li::before {
+    content: '▸ ';
+    color: var(--accent);
+    font-size: 0.7rem;
+  }
+
   .offsite-card {
     background: var(--bg3);
     border: 1px solid var(--border);
