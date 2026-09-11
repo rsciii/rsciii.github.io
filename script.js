@@ -1,13 +1,3 @@
-function openModal(id) {
-  document.getElementById(id).style.display = 'flex';
-  document.body.style.overflow = 'hidden';
-}
-
-function closeModal(id) {
-  document.getElementById(id).style.display = 'none';
-  document.body.style.overflow = '';
-}
-
 document.addEventListener('DOMContentLoaded', () => {
 
   // Mobile nav hamburger
@@ -27,58 +17,63 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Modal: open
-  document.getElementById('acronyms-open').addEventListener('click', (e) => {
-    e.preventDefault();
-    openModal('acronyms-overlay');
+  // Essays: the URL hash is the single source of truth for which one is open,
+  // so every piece has a shareable link and back/forward work as expected.
+  const ESSAYS = {
+    'acronyms':         { overlay: 'acronyms-overlay',     trigger: 'acronyms-open' },
+    'capricorn-energy': { overlay: 'birthday-overlay',     trigger: 'birthday-open' },
+    'fantasy-football': { overlay: 'fantasy-overlay',      trigger: 'fantasy-open' },
+    '30-vc-clients':    { overlay: 'thirtyclients-overlay', trigger: 'thirtyclients-open' },
+  };
+
+  function syncEssayFromHash() {
+    const slug = decodeURIComponent(location.hash.slice(1));
+    Object.entries(ESSAYS).forEach(([s, essay]) => {
+      document.getElementById(essay.overlay).style.display = s === slug ? 'flex' : 'none';
+    });
+    document.body.style.overflow = ESSAYS[slug] ? 'hidden' : '';
+  }
+
+  Object.entries(ESSAYS).forEach(([slug, essay]) => {
+    document.getElementById(essay.trigger).addEventListener('click', (e) => {
+      e.preventDefault();
+      location.hash = slug;
+    });
+
+    const overlayEl = document.getElementById(essay.overlay);
+    overlayEl.addEventListener('click', (e) => {
+      if (e.target === e.currentTarget) location.hash = 'blog';
+    });
+    overlayEl.querySelector('.close-btn').addEventListener('click', () => {
+      location.hash = 'blog';
+    });
   });
 
-  // Modal: close on overlay background click
-  document.getElementById('acronyms-overlay').addEventListener('click', (e) => {
-    if (e.target === e.currentTarget) closeModal('acronyms-overlay');
+  window.addEventListener('hashchange', syncEssayFromHash);
+  syncEssayFromHash();
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && ESSAYS[decodeURIComponent(location.hash.slice(1))]) {
+      location.hash = 'blog';
+    }
   });
 
-  // Modal: close buttons
-  document.querySelector('#acronyms-overlay .close-btn').addEventListener('click', () => closeModal('acronyms-overlay'));
-  document.querySelector('#fantasy-overlay .close-btn').addEventListener('click', () => closeModal('fantasy-overlay'));
-
-  // Fantasy modal: open
-  document.getElementById('fantasy-open').addEventListener('click', (e) => {
-    e.preventDefault();
-    openModal('fantasy-overlay');
-  });
-
-  // Birthday modal: open
-  document.getElementById('birthday-open').addEventListener('click', (e) => {
-    e.preventDefault();
-    openModal('birthday-overlay');
-  });
-
-  // Birthday modal: close on overlay background click
-  document.getElementById('birthday-overlay').addEventListener('click', (e) => {
-    if (e.target === e.currentTarget) closeModal('birthday-overlay');
-  });
-
-  // Birthday modal: close button
-  document.querySelector('#birthday-overlay .close-btn').addEventListener('click', () => closeModal('birthday-overlay'));
-
-  // 30 clients modal: open
-  document.getElementById('thirtyclients-open').addEventListener('click', (e) => {
-    e.preventDefault();
-    openModal('thirtyclients-overlay');
-  });
-
-  // 30 clients modal: close on overlay background click
-  document.getElementById('thirtyclients-overlay').addEventListener('click', (e) => {
-    if (e.target === e.currentTarget) closeModal('thirtyclients-overlay');
-  });
-
-  // 30 clients modal: close button
-  document.querySelector('#thirtyclients-overlay .close-btn').addEventListener('click', () => closeModal('thirtyclients-overlay'));
-
-  // Fantasy modal: close on overlay background click
-  document.getElementById('fantasy-overlay').addEventListener('click', (e) => {
-    if (e.target === e.currentTarget) closeModal('fantasy-overlay');
+  // Copy a direct link to the open essay
+  document.querySelectorAll('.copy-link-btn').forEach(btn => {
+    btn.addEventListener('click', async () => {
+      const url = location.origin + location.pathname + '#' + btn.dataset.slug;
+      try {
+        await navigator.clipboard.writeText(url);
+      } catch {
+        return;
+      }
+      btn.textContent = '✓ COPIED';
+      btn.classList.add('copied');
+      setTimeout(() => {
+        btn.textContent = '⧉ COPY LINK';
+        btn.classList.remove('copied');
+      }, 1600);
+    });
   });
 
   // Section collapse/expand

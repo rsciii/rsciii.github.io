@@ -1434,6 +1434,19 @@
     color: #c8c8d8;
     line-height: 1.85;
   }
+  .copy-link-btn {
+    position: absolute;
+    top: 1.25rem; right: 7.25rem;
+    font-family: 'Space Mono', monospace;
+    font-size: 0.75rem; color: var(--muted);
+    background: none; border: 1px solid rgba(255,255,255,0.1);
+    padding: 0.3rem 0.75rem; cursor: pointer;
+    letter-spacing: 0.08em; transition: color 0.2s, border-color 0.2s;
+    white-space: nowrap;
+  }
+  .copy-link-btn:hover { color: var(--accent); border-color: var(--accent); }
+  .copy-link-btn.copied { color: var(--accent); border-color: var(--accent); }
+
   #acronyms-modal .close-btn {
     position: absolute;
     top: 1.25rem; right: 1.5rem;
