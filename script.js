@@ -148,16 +148,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   renderBlog();
 
-  // Client logo tabs
-  document.querySelectorAll('.logo-tab').forEach(tab => {
-    tab.addEventListener('click', () => {
-      document.querySelectorAll('.logo-tab').forEach(t => t.classList.remove('active'));
-      document.querySelectorAll('.logo-grid').forEach(g => g.classList.add('hidden'));
-      tab.classList.add('active');
-      document.getElementById('tab-' + tab.dataset.tab).classList.remove('hidden');
-    });
-  });
-
   // World map
   new jsVectorMap({
     selector: '#world-map',
